@@ -34,16 +34,16 @@ export interface Profile {
 }
 
 export const profile: Profile = {
-  name: "John Doe",
-  role: "Software Engineer",
-  company: "Amazing Corp",
-  avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=400&h=400&auto=format&fit=crop",
-  bio: "I'm a software engineer passionate about creating beautiful and functional web experiences. Currently building the future of web development at Amazing Corp.",
-  passion: "I'm passionate about creating intuitive user experiences and solving complex problems through elegant code. When I'm not coding, you'll find me exploring new technologies, contributing to open source, or sharing knowledge with the developer community.",
+  name: "Louis Masson",
+  role: "Tech lovers (AI lovers) and business developer",
+  company: "Devoteam",
+  avatar: "avatar.jpeg",
+  bio: "I'm a business developer at Devoteam with a passion for new technologies and sports. In my free time, I love exploring the latest AI advancements and experimenting with them. Though my background isn't technical, I’m driven to create AI-powered products that make a difference.",
+  passion: "I'm passionate about AI and its potential to transform industries and improve people's lives. And also about sports.",
   social: {
-    twitter: "https://twitter.com/johndoe",
-    linkedin: "https://linkedin.com/in/johndoe",
-    github: "https://github.com/johndoe"
+    twitter: "https://x.com/Lmasson04pro",
+    linkedin: "https://www.linkedin.com/in/louis-masson-businessdeveloper/",
+    github: "https://github.com/LouisMasson"
   }
 }
 
@@ -53,68 +53,34 @@ export const technologies: Technology[] = [
   { name: "Node.js", emoji: "🟢" },
   { name: "Next.js", emoji: "▲" },
   { name: "TailwindCSS", emoji: "🎨" },
-  { name: "GraphQL", emoji: "📊" },
 ]
 
 export const projects: Project[] = [
   {
-    name: "Project Awesome",
-    description: "A real-time collaboration tool built with React and WebSocket",
-    image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&auto=format&fit=crop&q=80",
-    github: "https://github.com/johndoe/project-awesome",
-    demo: "https://project-awesome.demo",
-    tags: ["React", "WebSocket", "TypeScript"]
-  },
-  {
-    name: "Cool API",
-    description: "RESTful API service built with Node.js and Express",
-    image: "https://images.unsplash.com/photo-1557853197-aefb550b6fdc?w=800&auto=format&fit=crop&q=80",
-    github: "https://github.com/johndoe/cool-api",
-    tags: ["Node.js", "Express", "REST"]
-  },
-  {
-    name: "Dev Tools",
-    description: "Collection of developer utilities and productivity tools",
-    image: "https://images.unsplash.com/photo-1618477247222-acbdb0e159b3?w=800&auto=format&fit=crop&q=80",
-    github: "https://github.com/johndoe/dev-tools",
-    demo: "https://devtools.demo",
-    tags: ["TypeScript", "React", "CLI"]
+    name: "DocuBoost AI",
+    description: "Unlock technical insights for coding AI tools with this Streamlit app that scrapes technical documentation and downloads it in Markdown format, providing seamless context for Cursor AI, Bolt.new, and more.",
+    image: "docuboost_banner.png",
+    github: "https://github.com/LouisMasson/DocuBoost_AI",
+    demo: "https://docuboost.patronusguardian.org/", // Ajout du lien de démo
+    tags: ["Streamlit", "Python", "AI"]
   },
 ]
 
 export const books = {
   currentlyReading: [
     {
-      title: "The Pragmatic Programmer",
-      author: "David Thomas, Andrew Hunt",
-      description: "A guide to becoming a better programmer through practical examples and philosophy.",
-      link: "https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/",
-    },
-    {
-      title: "Deep Work",
-      author: "Cal Newport",
-      description: "Rules for focused success in a distracted world.",
-      link: "https://www.calnewport.com/books/deep-work/",
-    },
+      title: "L'almanach de Naval Ravikant",
+      author: "Naval Ravikant",
+      description: "A comprehensive guide to wealth and happiness, combining Naval's insights on life, philosophy, and investing.",
+      link: "https://www.amazon.fr/Lalmanach-Naval-Ravikant-senrichir-heureux/dp/236117071X",
+    },    
   ],
   recentlyFinished: [
     {
-      title: "Atomic Habits",
-      author: "James Clear",
-      description: "An easy and proven way to build good habits and break bad ones.",
-      link: "https://jamesclear.com/atomic-habits",
-    },
-    {
-      title: "The Phoenix Project",
-      author: "Gene Kim, Kevin Behr, George Spafford",
-      description: "A novel about IT, DevOps, and helping your business win.",
-      link: "https://itrevolution.com/product/the-phoenix-project/",
-    },
-    {
-      title: "Clean Code",
-      author: "Robert C. Martin",
-      description: "A handbook of agile software craftsmanship.",
-      link: "https://www.oreilly.com/library/view/clean-code-a/9780136083238/",
-    },
+      title: "Le Comte de Monte-Cristo",
+      author: "Alexandre Dumas",
+      description: "A classic tale of betrayal, adventure, and revenge, following Edmond Dantès as he transforms into the enigmatic Count of Monte Cristo.",
+      link: "https://www.amazon.fr/Comte-Monte-Cristo-1-Alexandre-Dumas/dp/2253098051",
+    },    
   ]
 }

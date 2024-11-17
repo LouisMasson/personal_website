@@ -20,7 +20,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={cn(
         inter.className,
-        "min-h-screen bg-background antialiased transition-colors duration-300"
+        "min-h-screen",
+        "bg-background",
+        "antialiased",
+        "transition-colors",
+        "duration-300"
       )}>
         <ThemeProvider
           attribute="class"

@@ -2,7 +2,7 @@
 
 A sleek, minimalist personal portfolio website built with cutting-edge web technologies. Perfect for developers, designers, and creators who want to showcase their work with style.
 
-<img src="Personal_site_demo.gif" width="800" alt="Site Preview">
+![Demo](/Personal_site_demo.gif)
 
 ## ✨ Highlights
 
