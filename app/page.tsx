@@ -105,7 +105,7 @@ export default function Home() {
                   </Link>
                 </Button>
                 <Button asChild size="sm">
-                  <Link href="https://xreceiptgenerator-demo.com" target="_blank">
+                  <Link href="https://xreceipt.patronusguardian.org/" target="_blank">
                     <ExternalLink className="mr-2 h-4 w-4" />
                     Demo
                   </Link>
