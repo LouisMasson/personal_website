@@ -80,39 +80,6 @@ export default function Home() {
               </div>
             </Card>
           ))}
-          <Card key="XReceiptGenerator" className="overflow-hidden">
-            <div className="relative h-48 w-full">
-              <Image
-                src="/path/to/xreceiptgenerator-image.jpg"
-                alt="XReceiptGenerator"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-medium mb-2">XReceiptGenerator</h3>
-              <p className="text-muted-foreground mb-4">A tool to generate receipts easily and quickly.</p>
-              <div className="flex gap-2 mb-4 flex-wrap">
-                <Badge variant="secondary">React</Badge>
-                <Badge variant="secondary">Node.js</Badge>
-                <Badge variant="secondary">Express</Badge>
-              </div>
-              <div className="flex gap-2">
-                <Button asChild variant="outline" size="sm">
-                  <Link href="https://github.com/LouisMasson/XReceiptGenerator" target="_blank">
-                    <Github className="mr-2 h-4 w-4" />
-                    GitHub
-                  </Link>
-                </Button>
-                <Button asChild size="sm">
-                  <Link href="https://xreceipt.patronusguardian.org/" target="_blank">
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    Demo
-                  </Link>
-                </Button>
-              </div>
-            </div>
-          </Card>
         </div>
       </section>
 
