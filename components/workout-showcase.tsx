@@ -1,22 +1,16 @@
 "use client"
 
 import { useState } from 'react'
-import Image from 'next/image'
 
 export default function Component() {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
-
-  const workoutImages = [
-    { src: '/IMG_0087.jpeg', alt: 'The temple' },
-    { src: '/IMG_3371.jpeg', alt: 'Back day' },
-    { src: '/IMG_6357.JPG', alt: 'Dumbbell in the time room' }
-  ]
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
     <div className="container mx-auto px-4 py-12">
       <h2 className="text-3xl font-bold text-center mb-12">My Workout Passion</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 justify-items-center max-w-5xl mx-auto">
-        {workoutImages.map((image, index) => (
+        {/* Remove the image showcase */}
+        {/* {workoutImages.map((image, index) => (
           <div
             key={index}
             className="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 w-[250px] h-[350px]"
@@ -40,7 +34,7 @@ export default function Component() {
               </p>
             </div>
           </div>
-        ))}
+        ))} */}
       </div>
     </div>
   )

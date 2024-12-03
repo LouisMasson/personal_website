@@ -6,7 +6,6 @@ import Link from "next/link"
 import Image from "next/image"
 import { ProfileHeader } from "@/components/profile-header"
 import { profile, technologies, projects } from "@/lib/content"
-import WorkoutShowcase from "@/components/workout-showcase"
 
 export default function Home() {
   return (
@@ -37,9 +36,6 @@ export default function Home() {
         <h2 className="text-2xl font-semibold">What Drives Me 🚀</h2>
         <p className="text-muted-foreground">{profile.passion}</p>
       </section>
-
-      {/* Workout Showcase */}
-      <WorkoutShowcase />
 
       {/* Projects */}
       <section className="space-y-4">
