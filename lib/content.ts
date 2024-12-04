@@ -48,11 +48,8 @@ export const profile: Profile = {
 }
 
 export const technologies: Technology[] = [
-  { name: "React", emoji: "⚛️" },
-  { name: "TypeScript", emoji: "📘" },
-  { name: "Node.js", emoji: "🟢" },
-  { name: "Next.js", emoji: "▲" },
-  { name: "TailwindCSS", emoji: "🎨" },
+  { name: "Replit", emoji: "🔸" },
+  { name: "Cursor AI", emoji: "▪️" },
 ]
 
 export const projects: Project[] = [
@@ -63,6 +60,15 @@ export const projects: Project[] = [
     github: "https://github.com/LouisMasson/DocuBoost_AI",
     demo: "https://docuboost.patronusguardian.org/", // Ajout du lien de démo
     tags: ["Streamlit", "Python", "AI"]
+  },
+
+  {
+    name: "X Receipt Generator",
+    description: "Generate your own X profile receipts with this simple web app, built with React and Tailwind CSS.",
+    image: "X_Receipt_Generator.png",
+    github: "https://github.com/LouisMasson/XReceiptGenerator",
+    demo: "https://xreceipt.patronusguardian.org/", // Ajout du lien de démo
+    tags: ["Tailwind CSS", "Python", "AI"]
   },
 ]
 
