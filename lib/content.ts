@@ -54,6 +54,29 @@ export const technologies: Technology[] = [
   { name: "HuggingFace", emoji: "🤗" },
 ]
 
+export interface Certification {
+  title: string
+  issuer: string
+  date: string
+  description: string
+  badge?: string
+  credentialUrl?: string
+  skills?: string[]
+}
+
+export const certifications: Certification[] = [
+  {
+    title: "Generative AI For Everyone",
+    issuer: "DeepLearning.AI",
+    date: "2024",
+    description: "Certification on Gen AI for Everyone",
+    badge: "Deeplearning.jpg",
+    credentialUrl:"https://www.coursera.org/account/accomplishments/verify/HKW5AJWDGK2Q",
+    skills: ["Gen AI", "Prompting", "Model Deployment"]
+  },
+  // Add more certifications as needed
+]
+
 export const projects: Project[] = [
   {
     name: "DocuBoost AI",

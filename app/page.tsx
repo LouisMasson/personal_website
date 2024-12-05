@@ -6,6 +6,8 @@ import Link from "next/link"
 import Image from "next/image"
 import { ProfileHeader } from "@/components/profile-header"
 import { profile, technologies, projects } from "@/lib/content"
+import { CertificationCard } from "@/components/certification-card"
+import { certifications } from "@/lib/content"
 
 export default function Home() {
   return (
@@ -37,6 +39,16 @@ export default function Home() {
         <p className="text-muted-foreground">{profile.passion}</p>
       </section>
 
+      {/* Certifications */}
+      <section className="space-y-4">
+        <h2 className="text-2xl font-semibold">Certifications 🎓</h2>
+        <div className="grid gap-4">
+          {certifications.map((cert) => (
+            <CertificationCard key={cert.title} certification={cert} />
+          ))}
+        </div>
+      </section>
+    
       {/* Projects */}
       <section className="space-y-4">
         <h2 className="text-2xl font-semibold">Fun Projects 🎨</h2>
