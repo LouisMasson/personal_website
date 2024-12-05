@@ -50,6 +50,8 @@ export const profile: Profile = {
 export const technologies: Technology[] = [
   { name: "Replit", emoji: "🔸" },
   { name: "Cursor AI", emoji: "▪️" },
+  { name: "Perplexity", emoji: "🔹" },
+  { name: "HuggingFace", emoji: "🤗" },
 ]
 
 export const projects: Project[] = [
