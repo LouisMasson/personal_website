@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google'
 import { ThemeProvider } from '@/components/theme-provider'
 import { cn } from '@/lib/utils'
 import { Navigation } from '@/components/navigation'
+import { Metadata } from 'next'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,6 +23,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <Script 
+          defer
+          data-domain="louismasson.patronusguardian.org" 
+          src="http://plausible-pcocwko0csw0gkgc0gs0ggc8.100.42.177.245.sslip.io/js/script.outbound-links.js"
+          strategy="afterInteractive"
+        />
+      </head>
       <body className={cn(
         inter.className,
         "min-h-screen",
