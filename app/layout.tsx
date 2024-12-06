@@ -23,7 +23,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <PlausibleProvider domain="louismasson.patronusguardian.org" />
+        <PlausibleProvider 
+          domain="louismasson.patronusguardian.org"
+          customDomain="http://plausible-pcocwko0csw0gkgc0gs0ggc8.100.42.177.245.sslip.io"
+          trackOutboundLinks={true}
+          enabled={process.env.NODE_ENV === 'production'}
+        />
       </head>
       <body className={cn(
         inter.className,
