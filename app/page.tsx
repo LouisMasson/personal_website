@@ -22,7 +22,7 @@ export default function Home() {
 
       {/* Technologies */}
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold">Technologies I Love 💻</h2>
+        <h2 className="text-2xl font-semibold">Technologies & Tools that I Love 💻</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {technologies.map((tech) => (
             <Card key={tech.name} className="p-4 text-center">

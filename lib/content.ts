@@ -35,7 +35,7 @@ export interface Profile {
 
 export const profile: Profile = {
   name: "Louis Masson",
-  role: "Tech lovers (AI lovers) and business developer",
+  role: "Trailblazer in tech innovation, champion of AI and the self-hosting frontier, and dynamic business developer",
   company: "Devoteam",
   avatar: "avatar.jpeg",
   bio: "I'm a business developer at Devoteam with a passion for new technologies and sports. In my free time, I love exploring the latest AI advancements and experimenting with them. Though my background isn't technical, I’m driven to create AI-powered products that make a difference.",
@@ -52,6 +52,8 @@ export const technologies: Technology[] = [
   { name: "Cursor AI", emoji: "▪️" },
   { name: "Perplexity", emoji: "🔹" },
   { name: "HuggingFace", emoji: "🤗" },
+  { name: "Runtipi", emoji: "⛺" },
+  { name: "Coolify", emoji: "🆒" },
 ]
 
 export interface Certification {
