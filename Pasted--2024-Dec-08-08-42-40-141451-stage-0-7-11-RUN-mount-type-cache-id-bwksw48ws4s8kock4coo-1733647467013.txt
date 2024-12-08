@@ -1,0 +1,50 @@
+------
+2024-Dec-08 08:42:40.141451
+ > [stage-0  7/11] RUN --mount=type=cache,id=bwksw48ws4s8kock4coo4444-/usr/local/share/cache/yarn/v6,target=/usr/local/share/.cache/yarn/v6 yarn install --frozen-lockfile:
+2024-Dec-08 08:42:40.141451
+220.3     at Object.onceWrapper (node:events:631:28)
+2024-Dec-08 08:42:40.141451
+220.3     at ClientRequest.emit (node:events:517:28)
+2024-Dec-08 08:42:40.141451
+220.3     at TLSSocket.emitRequestTimeout (node:_http_client:847:9)
+2024-Dec-08 08:42:40.141451
+220.3     at Object.onceWrapper (node:events:631:28)
+2024-Dec-08 08:42:40.141451
+220.3     at TLSSocket.emit (node:events:529:35)
+2024-Dec-08 08:42:40.141451
+220.3     at Socket._onTimeout (node:net:598:8)
+2024-Dec-08 08:42:40.141451
+220.3     at listOnTimeout (node:internal/timers:569:17)
+2024-Dec-08 08:42:40.141451
+220.3     at process.processTimers (node:internal/timers:512:7)
+2024-Dec-08 08:42:40.141451
+220.3 info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this command.
+2024-Dec-08 08:42:40.141451
+224.1 info There appears to be trouble with your network connection. Retrying...
+2024-Dec-08 08:42:40.141451
+------
+2024-Dec-08 08:42:40.141451
+2024-Dec-08 08:42:40.141451
+ 1 warning found (use docker --debug to expand):
+2024-Dec-08 08:42:40.141451
+ - UndefinedVar: Usage of undefined variable '$NIXPACKS_PATH' (line 18)
+2024-Dec-08 08:42:40.141451
+Dockerfile:20
+2024-Dec-08 08:42:40.141451
+--------------------
+2024-Dec-08 08:42:40.141451
+  18 |     ENV NIXPACKS_PATH=/app/node_modules/.bin:$NIXPACKS_PATH
+2024-Dec-08 08:42:40.141451
+  19 |     COPY . /app/.
+2024-Dec-08 08:42:40.141451
+  20 | >>> RUN --mount=type=cache,id=bwksw48ws4s8kock4coo4444-/usr/local/share/cache/yarn/v6,target=/usr/local/share/.cache/yarn/v6 yarn install --frozen-lockfile
+2024-Dec-08 08:42:40.141451
+  21 |     
+2024-Dec-08 08:42:40.141451
+  22 |     # build phase
+2024-Dec-08 08:42:40.141451
+--------------------
+2024-Dec-08 08:42:40.141451
+ERROR: failed to solve: process "/bin/bash -ol pipefail -c yarn install --frozen-lockfile" did not complete successfully: exit code: 1
+2024-Dec-08 08:42:40.158254
+Deployment failed. Removing the new version of your application.
