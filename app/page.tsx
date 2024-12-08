@@ -8,6 +8,7 @@ import { ProfileHeader } from "@/components/profile-header"
 import { profile, technologies, projects } from "@/lib/content"
 import { CertificationCard } from "@/components/certification-card"
 import { certifications } from "@/lib/content"
+import { GithubCalendar } from "@/components/github-calendar"
 
 export default function Home() {
   return (
@@ -18,6 +19,12 @@ export default function Home() {
       <section className="space-y-4">
         <h2 className="text-2xl font-semibold">About Me 👋</h2>
         <p className="text-lg text-muted-foreground">{profile.bio}</p>
+      </section>
+
+      {/* GitHub Activity */}
+      <section className="space-y-4">
+        <h2 className="text-2xl font-semibold">GitHub Activity 📊</h2>
+        <GithubCalendar />
       </section>
 
       {/* Technologies */}
