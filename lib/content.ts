@@ -97,6 +97,15 @@ export const projects: Project[] = [
     demo: "https://xreceipt.patronusguardian.org/", // Ajout du lien de démo
     tags: ["Tailwind CSS", "Python", "AI"]
   },
+
+  {
+    name: "Github Receipt Generator",
+    description: "Generate your own GitHub profile receipts with this simple web app.",
+    image: "Github_receipt",
+    github: "https://github.com/LouisMasson/Github_ReceiptGenerator",
+    demo: "https://gitreceipt.patronusguardian.org", // Ajout du lien de démo
+    tags: ["JavaScript", "Python", "AI"]
+  },
 ]
 
 export const books = {
