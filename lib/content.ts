@@ -101,7 +101,7 @@ export const projects: Project[] = [
   {
     name: "Github Receipt Generator",
     description: "Generate your own GitHub profile receipts with this simple web app.",
-    image: "Github_receipt",
+    image: "Github_receipt.png",
     github: "https://github.com/LouisMasson/Github_ReceiptGenerator",
     demo: "https://gitreceipt.patronusguardian.org", // Ajout du lien de démo
     tags: ["JavaScript", "Python", "AI"]
