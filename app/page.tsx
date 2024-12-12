@@ -5,7 +5,7 @@ import { Github, Twitter, Linkedin, ExternalLink } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import { ProfileHeader } from "@/components/profile-header"
-import { profile, technologies, projects } from "@/lib/content"
+import { profile, technologies, projects, education, experiences } from "@/lib/content"
 import { CertificationCard } from "@/components/certification-card"
 import { certifications } from "@/lib/content"
 
