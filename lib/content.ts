@@ -140,23 +140,23 @@ export const projects: Project[] = [
 
 export const education: Education[] = [
   {
-    school: "Your School Name",
-    degree: "Master's Degree",
-    field: "Your Field",
+    school: "Euridis Business School",
+    degree: "Master's Degree in IT business engineering",
+    field: "Business in IT industry",
     duration: "2020 - 2022",
-    description: "Description of your studies and achievements",
-    logo: "school-logo.png"
+    description: "A business school specializing in the high-tech sector, trains business engineers for complex sales jobs.",
+    logo: "euridis_business_school_logo.jpg"
   }
 ]
 
 export const experiences: Experience[] = [
   {
-    company: "Devoteam",
-    role: "Business Developer",
-    duration: "2023 - Present",
-    description: "Description of your role and achievements",
+    company: "Devoteam Luxembourg",
+    role: "Account Manager",
+    duration: "2024 - Present",
+    description: "Key responsibilities: Developing and maintaining strong client relationships, Identifying new business opportunities, Collaborating with cross-functional teams to deliver tailored solutions, Supporting the implementation of digital transformation strategies, Engaging in recruitment phases to meet client talent requirements",
     logo: "devoteam-logo.png",
-    skills: ["Business Development", "AI", "Technology"]
+    skills: ["Business Development", "Cloud", "Data" , "AI", "Sales", "Recruitment", "Digital Workplace", "Customer Relationship Management", "Customer Service",]
   }
 ]
 
