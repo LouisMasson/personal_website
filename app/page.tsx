@@ -39,6 +39,60 @@ export default function Home() {
         <p className="text-muted-foreground">{profile.passion}</p>
       </section>
 
+      {/* Education */}
+      <section className="space-y-4">
+        <h2 className="text-2xl font-semibold">Education 🎓</h2>
+        <div className="grid gap-4">
+          {education.map((edu) => (
+            <Card key={edu.school} className="p-6">
+              <div className="flex items-start gap-4">
+                {edu.logo && (
+                  <div className="relative h-16 w-16 flex-shrink-0">
+                    <Image src={edu.logo} alt={edu.school} fill className="object-contain" />
+                  </div>
+                )}
+                <div>
+                  <h3 className="text-lg font-medium">{edu.school}</h3>
+                  <p className="text-sm text-muted-foreground">{edu.degree} • {edu.field}</p>
+                  <p className="text-sm text-muted-foreground">{edu.duration}</p>
+                  {edu.description && <p className="mt-2 text-sm">{edu.description}</p>}
+                </div>
+              </div>
+            </Card>
+          ))}
+        </div>
+      </section>
+
+      {/* Experience */}
+      <section className="space-y-4">
+        <h2 className="text-2xl font-semibold">Experience 💼</h2>
+        <div className="grid gap-4">
+          {experiences.map((exp) => (
+            <Card key={exp.company} className="p-6">
+              <div className="flex items-start gap-4">
+                {exp.logo && (
+                  <div className="relative h-16 w-16 flex-shrink-0">
+                    <Image src={exp.logo} alt={exp.company} fill className="object-contain" />
+                  </div>
+                )}
+                <div>
+                  <h3 className="text-lg font-medium">{exp.role}</h3>
+                  <p className="text-sm text-muted-foreground">{exp.company} • {exp.duration}</p>
+                  <p className="mt-2 text-sm">{exp.description}</p>
+                  {exp.skills && (
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {exp.skills.map(skill => (
+                        <Badge key={skill} variant="secondary">{skill}</Badge>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </div>
+            </Card>
+          ))}
+        </div>
+      </section>
+
       {/* Certifications */}
       <section className="space-y-4">
         <h2 className="text-2xl font-semibold">Certifications 🎓</h2>

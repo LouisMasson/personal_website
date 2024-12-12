@@ -12,6 +12,24 @@ export interface Project {
   tags?: string[]
 }
 
+export interface Education {
+  school: string
+  degree: string
+  field: string
+  duration: string
+  description?: string
+  logo?: string
+}
+
+export interface Experience {
+  company: string
+  role: string
+  duration: string
+  description: string
+  logo?: string
+  skills?: string[]
+}
+
 export interface Book {
   title: string
   author: string
@@ -54,6 +72,8 @@ export const technologies: Technology[] = [
   { name: "HuggingFace", emoji: "🤗" },
   { name: "Runtipi", emoji: "⛺" },
   { name: "Coolify", emoji: "🆒" },
+  { name: "Python", emoji: "🐍" },
+  { name: "Streamlit", emoji: "💻" },
 ]
 
 export interface Certification {
@@ -73,6 +93,16 @@ export const certifications: Certification[] = [
     date: "2024",
     description: "Certification on Gen AI for Everyone",
     badge: "Deeplearning.jpg",
+    credentialUrl:"https://www.coursera.org/account/accomplishments/verify/HKW5AJWDGK2Q",
+    skills: ["Gen AI", "Prompting", "Model Deployment"]
+  },
+
+  {
+    title: "Devoteam GenAI Level 1",
+    issuer: "Devoteam Academy",
+    date: "2024",
+    description: "Certification on Gen AI for Devoteam Employee",
+    badge: "Genai_devoteam.png",
     credentialUrl:"https://www.coursera.org/account/accomplishments/verify/HKW5AJWDGK2Q",
     skills: ["Gen AI", "Prompting", "Model Deployment"]
   },
@@ -106,6 +136,28 @@ export const projects: Project[] = [
     demo: "https://gitreceipt.patronusguardian.org", // Ajout du lien de démo
     tags: ["JavaScript", "Python", "AI"]
   },
+]
+
+export const education: Education[] = [
+  {
+    school: "Your School Name",
+    degree: "Master's Degree",
+    field: "Your Field",
+    duration: "2020 - 2022",
+    description: "Description of your studies and achievements",
+    logo: "school-logo.png"
+  }
+]
+
+export const experiences: Experience[] = [
+  {
+    company: "Devoteam",
+    role: "Business Developer",
+    duration: "2023 - Present",
+    description: "Description of your role and achievements",
+    logo: "devoteam-logo.png",
+    skills: ["Business Development", "AI", "Technology"]
+  }
 ]
 
 export const books = {
