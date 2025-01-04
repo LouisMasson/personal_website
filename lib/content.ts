@@ -106,6 +106,16 @@ export const certifications: Certification[] = [
     credentialUrl:"https://www.coursera.org/account/accomplishments/verify/HKW5AJWDGK2Q",
     skills: ["Gen AI", "Prompting", "Model Deployment"]
   },
+  
+  {
+    title: "Microsoft Certified Azure Fundemantals",
+    issuer: "Microsoft",
+    date: "2024",
+    description: "Earners of the Azure Fundamentals certification have demonstrated foundational level knowledge of cloud services and how those services are provided with Microsoft Azure",
+    badge: "badge_azure.png",
+    credentialUrl:"https://learn.microsoft.com/api/credentials/share/fr-fr/Louis-3423/6979B97237EA0633?sharingId=F6ECF5B78B1049F1",
+    skills: ["Azure", "Cloud", "AZ-900"]
+  },
   // Add more certifications as needed
 ]
 
