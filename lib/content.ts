@@ -116,6 +116,16 @@ export const certifications: Certification[] = [
     credentialUrl:"https://learn.microsoft.com/api/credentials/share/fr-fr/Louis-3423/6979B97237EA0633?sharingId=F6ECF5B78B1049F1",
     skills: ["Azure", "Cloud", "AZ-900"]
   },
+
+  {
+    title: "Microsoft Certified Azure Data Fundemantals",
+    issuer: "Microsoft",
+    date: "2024",
+    description: "The Azure DP-900: Microsoft Azure Data Fundamentals certification validates your foundational knowledge of core data concepts, including relational and non-relational data, as well as various types of data workloads such as transactional and analytical, and how these are implemented using Microsoft Azure data services",
+    badge: "dp900.png",
+    credentialUrl:"https://learn.microsoft.com/fr-fr/users/louis-3423/credentials/certification/azure-data-fundamentals",
+    skills: ["Azure", "Data", "DP-900", "Azure Data Factory", "Data Warehouse"]
+  },
   // Add more certifications as needed
 ]
 
