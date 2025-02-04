@@ -156,6 +156,16 @@ export const projects: Project[] = [
     demo: "https://gitreceipt.patronusguardian.org", // Ajout du lien de démo
     tags: ["JavaScript", "Python", "AI"]
   },
+
+  {
+    name: "RSS feed reader auto-tagging and autosummarize",
+    description: "A new way to read RSS feed",
+    image: "RSSfeed.png",
+    github: "https://github.com/LouisMasson/RSSfeedreader",
+    demo: "https://rssfeedaicompanion.replit.app", // Ajout du lien de démo
+    tags: ["JavaScript", "Python", "Replit", "Gemini", "AI", "Firebase"]
+  },
+  
 ]
 
 export const education: Education[] = [
