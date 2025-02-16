@@ -48,6 +48,9 @@ export default function RootLayout({
           <main className="container mx-auto px-4 py-8 max-w-3xl">
             {children}
           </main>
+          <footer className="text-center py-4 text-sm text-muted-foreground border-t">
+            Made by Louis with ❤️ and Replit
+          </footer>
         </ThemeProvider>
       </body>
     </html>
