@@ -103,8 +103,18 @@ export const certifications: Certification[] = [
     date: "2024",
     description: "Certification on Gen AI for Devoteam Employee",
     badge: "Genai_devoteam.png",
-    credentialUrl:"https://www.coursera.org/account/accomplishments/verify/HKW5AJWDGK2Q",
-    skills: ["Gen AI", "Prompting", "Model Deployment"]
+credentialUrl:"https://eu.badgr.com/public/assertions/FoibiNFQQeSS4j8sT9w4ag",
+    skills: ["Gen AI","Model Deployment"]
+  },
+
+  {
+    title: "Devoteam GenAI Level 2",
+    issuer: "Devoteam Academy",
+    date: "2024",
+    description: "Certification on Gen AI for Devoteam Employee",
+    badge: "Genai_devoteam.png",
+  credentialUrl:"https://eu.badgr.com/public/assertions/WEhtqk74TqSspbzbypDk8w",
+    skills: ["Gen AI","Model Deployment"]
   },
   
   {
