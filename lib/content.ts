@@ -140,15 +140,6 @@ export const projects: Project[] = [
   },
 
   {
-    name: "X Receipt Generator",
-    description: "Generate your own X profile receipts with this simple web app, built with React and Tailwind CSS.",
-    image: "X_Receipt_Generator.png",
-    github: "https://github.com/LouisMasson/XReceiptGenerator",
-    demo: "https://xreceipt.patronusguardian.org/", // Ajout du lien de démo
-    tags: ["Tailwind CSS", "Python", "AI"]
-  },
-
-  {
     name: "Github Receipt Generator",
     description: "Generate your own GitHub profile receipts with this simple web app.",
     image: "Github_receipt.png",
