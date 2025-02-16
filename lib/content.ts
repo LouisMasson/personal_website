@@ -53,10 +53,10 @@ export interface Profile {
 
 export const profile: Profile = {
   name: "Louis Masson",
-  role: "Trailblazer in tech innovation, champion of AI and the self-hosting frontier, and dynamic business developer",
-  company: "Devoteam",
+  role: "Trailblazer in tech innovation, champion of AI and the self-hosting frontier, and dynamic Account Manager",
+  company: "Devoteam Luxembourg 🇱🇺",
   avatar: "avatar.jpeg",
-  bio: "I'm a business developer at Devoteam with a passion for new technologies and sports. In my free time, I love exploring the latest AI advancements and experimenting with them. Though my background isn't technical, I’m driven to create AI-powered products that make a difference.",
+  bio: "I'm Account Manager at Devoteam Luxembourg with a passion for new technologies and sports. In my free time, I love exploring the latest AI advancements and experimenting with them. Though my background isn't technical, I’m driven to create AI-powered products that make a difference.",
   passion: "I'm passionate about AI and its potential to transform industries and improve people's lives. And also about sports.",
   social: {
     twitter: "https://x.com/Lmasson04pro",
@@ -67,7 +67,7 @@ export const profile: Profile = {
 
 export const technologies: Technology[] = [
   { name: "Replit", emoji: "🔸" },
-  { name: "Cursor AI", emoji: "▪️" },
+  { name: "Cursor", emoji: "▪️" },
   { name: "Perplexity", emoji: "🔹" },
   { name: "HuggingFace", emoji: "🤗" },
   { name: "Runtipi", emoji: "⛺" },
