@@ -130,14 +130,6 @@ export const certifications: Certification[] = [
 ]
 
 export const projects: Project[] = [
-  {
-    name: "DocuBoost AI",
-    description: "Unlock technical insights for coding AI tools with this Streamlit app that scrapes technical documentation and downloads it in Markdown format, providing seamless context for Cursor AI, Bolt.new, and more.",
-    image: "docuboost_banner.png",
-    github: "https://github.com/LouisMasson/DocuBoost_AI",
-    demo: "https://docuboost.patronusguardian.org/", // Ajout du lien de démo
-    tags: ["Streamlit", "Python", "AI"]
-  },
 
   {
     name: "Github Receipt Generator",
@@ -155,6 +147,15 @@ export const projects: Project[] = [
     github: "https://github.com/LouisMasson/RSSfeedreader",
     demo: "https://rssfeedaicompanion.replit.app", // Ajout du lien de démo
     tags: ["JavaScript", "Python", "Replit", "Gemini", "AI", "Firebase"]
+  },
+
+  {
+    name: "Auto-convert mobile application Hungary trip - HUF to EUR",
+    description: "An easy way to convert HUF in EUR and vice-versa",
+    image: "App_screen.png",
+    github: "https://github.com/LouisMasson/Currency-HUF-to-EUR-and-tips",
+    demo: "https://currency-tip-lmasson.replit.app/", // Ajout du lien de démo
+    tags: ["React-native", "Typrescript", "Replit", "Gemini", "Finance API"]
   },
   
 ]
