@@ -186,10 +186,29 @@ export const experiences: Experience[] = [
     company: "Devoteam Luxembourg",
     role: "Account Manager",
     duration: "2024 - Present",
-    description: "Key responsibilities: Developing and maintaining strong client relationships, Identifying new business opportunities, Collaborating with cross-functional teams to deliver tailored solutions, Supporting the implementation of digital transformation strategies, Engaging in recruitment phases to meet client talent requirements",
+    description: "Key responsibilities: Developing and maintaining strong client relationships, Identifying new business opportunities, Collaborating with cross-functional teams to deliver tailored solutions, Supporting the implementation of digital transformation strategies, Engaging in recruitment phases to meet client talent requirements.",
     logo: "devoteam-logo.png",
     skills: ["Business Development", "Cloud", "Data" , "AI", "Sales", "Recruitment", "Digital Workplace", "Customer Relationship Management", "Customer Service",]
   }
+,
+  {
+    company: "Synergy France",
+    role: "Account Manager",
+    duration: "2023 - 2024",
+    description: "Key responsibilities: Developing and maintaining strong client relationships, Identifying new business opportunities in Paris and Lille, Collaborating with cross-functional teams to deliver tailored solutions based on data, Identify new way for companies to value their data.",
+    logo: "synergylogo.jpeg",
+    skills: ["Business Development", "Data" , "AI", "Sales", "Snowflake", "Power BI", "Customer Relationship Management", "Customer Service",]
+  }
+,
+  {
+    company: "Acteam-IT",
+    role: "Business Developer",
+    duration: "2020-2023",
+    description: "Key responsibilities: Creating new business relation with stakeholers, New business opportunity research, Monitoring customer portfolio.",
+    logo: "acteam_it_logo.png",
+    skills: ["Business Development", "Sales", "ICT services", "Customer Relationship Management", "Customer Service",]
+  }
+  
 ]
 
 export const books = {
