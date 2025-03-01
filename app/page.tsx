@@ -8,6 +8,7 @@ import { ProfileHeader } from "@/components/profile-header"
 import { profile, technologies, projects, education, experiences } from "@/lib/content"
 import { CertificationCard } from "@/components/certification-card"
 import { certifications } from "@/lib/content"
+import { ExperienceCard } from "@/components/experience-card"
 
 export default function Home() {
   return (
