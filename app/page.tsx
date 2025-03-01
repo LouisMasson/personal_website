@@ -97,6 +97,17 @@ export default function Home() {
       <section className="space-y-4">
         <h2 className="text-2xl font-semibold">Certifications 🎓</h2>
         <div className="grid gap-4">
+
+{/* Exemple d'utilisation dans votre page principale (ajoutez ceci à l'endroit approprié) */}
+<section className="py-8">
+  <h2 className="text-2xl font-bold mb-4">Expérience professionnelle</h2>
+  <div className="grid gap-4 md:grid-cols-1">
+    {experiences.map((exp, i) => (
+      <ExperienceCard key={i} experience={exp} />
+    ))}
+  </div>
+</section>
+
           {certifications.map((cert) => (
             <CertificationCard key={cert.title} certification={cert} />
           ))}

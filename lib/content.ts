@@ -21,11 +21,17 @@ export interface Education {
   logo?: string
 }
 
+export interface ExperiencePoint {
+  text: string
+  subpoints?: string[]
+}
+
 export interface Experience {
   company: string
   role: string
   duration: string
   description: string
+  bulletPoints?: ExperiencePoint[]
   logo?: string
   skills?: string[]
 }
@@ -186,27 +192,44 @@ export const experiences: Experience[] = [
     company: "Devoteam Luxembourg",
     role: "Account Manager",
     duration: "2024 - Present",
-    description: "Key responsibilities:Developing and maintaining strong client relationships across diverse industries (Insurance, Industrial & Manufacturing, Banking, Transport & Logistics).",
+    description: "Key responsibilities in account management at Devoteam Luxembourg.",
+    bulletPoints: [
+      { text: "Developing and maintaining strong client relationships across diverse industries (Insurance, Industrial & Manufacturing, Banking, Transport & Logistics)." },
+      { text: "Managing strategic accounts for the Luxembourg office, including Large Enterprise Customers and SMBs." },
+      { text: "Identifying new business opportunities in the Luxembourg market as a CSP." },
+      { text: "Helping business departments automate their workflows using ServiceNow capabilities." }
+    ],
     logo: "devoteam-logo.png",
-    skills: ["Business Development", "Cloud", "Data" , "AI", "Sales", "Recruitment", "Digital Workplace", "Customer Relationship Management", "Customer Service",]
+    skills: ["Business Development", "Cloud", "Data" , "AI", "Sales", "Recruitment", "Digital Workplace", "Customer Relationship Management", "Customer Service"]
   }
 ,
   {
     company: "Synergy France",
     role: "Account Manager",
     duration: "2023 - 2024",
-    description: "Key responsibilities: Developing and maintaining strong client relationships, Identifying new business opportunities in Paris and Lille, Collaborating with cross-functional teams to deliver tailored solutions based on data, Identify new way for companies to value their data.",
+    description: "Key responsibilities as Account Manager at Synergy France.",
+    bulletPoints: [
+      { text: "Developing and maintaining strong client relationships." },
+      { text: "Identifying new business opportunities in Paris and Lille." },
+      { text: "Collaborating with cross-functional teams to deliver tailored solutions based on data." },
+      { text: "Identify new ways for companies to value their data." }
+    ],
     logo: "synergylogo.jpeg",
-    skills: ["Business Development", "Data" , "AI", "Sales", "Snowflake", "Power BI", "Customer Relationship Management", "Customer Service",]
+    skills: ["Business Development", "Data" , "AI", "Sales", "Snowflake", "Power BI", "Customer Relationship Management", "Customer Service"]
   }
 ,
   {
     company: "Acteam-IT",
     role: "Business Developer",
     duration: "2020-2023",
-    description: "Key responsibilities: Creating new business relation with stakeholers, New business opportunity research, Monitoring customer portfolio.",
+    description: "Key responsibilities as Business Developer at Acteam-IT.",
+    bulletPoints: [
+      { text: "Creating new business relations with stakeholders." },
+      { text: "New business opportunity research." },
+      { text: "Monitoring customer portfolio." }
+    ],
     logo: "acteam_it_logo.png",
-    skills: ["Business Development", "Sales", "ICT services", "Customer Relationship Management", "Customer Service",]
+    skills: ["Business Development", "Sales", "ICT services", "Customer Relationship Management", "Customer Service"]
   }
   
 ]
