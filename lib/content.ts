@@ -74,6 +74,7 @@ export const profile: Profile = {
 export const technologies: Technology[] = [
   { name: "Replit", emoji: "🔸" },
   { name: "Cursor", emoji: "▪️" },
+  { name: "Windsurf", emoji: "🏄‍♂️" },
   { name: "Perplexity", emoji: "🔹" },
   { name: "HuggingFace", emoji: "🤗" },
   { name: "Runtipi", emoji: "⛺" },
@@ -142,6 +143,16 @@ credentialUrl:"https://eu.badgr.com/public/assertions/FoibiNFQQeSS4j8sT9w4ag",
     credentialUrl:"https://learn.microsoft.com/fr-fr/users/louis-3423/credentials/certification/azure-data-fundamentals",
     skills: ["Azure", "Data", "DP-900", "Azure Data Factory", "Data Warehouse"]
   },
+
+    {
+      title: "Build Apps with Windsurf’s AI Coding Agents!",
+      issuer: "DeepLearning.AI & Windsurf",
+      date: "2025",
+      description: "Learn to build, debug, and deploy applications with an Agentic AI-powered integrated development environment.",
+      badge: "Deeplearning.jpg",
+      credentialUrl:"https://learn.deeplearning.ai/accomplishments/85d90dc5-4800-4a20-b925-84d34f4d7b32?usp=sharing",
+      skills: ["Windsurf", "Data", "AI", "Agent Coding"]
+    },
   // Add more certifications as needed
 ]
 
