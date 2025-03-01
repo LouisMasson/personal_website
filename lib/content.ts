@@ -186,7 +186,7 @@ export const experiences: Experience[] = [
     company: "Devoteam Luxembourg",
     role: "Account Manager",
     duration: "2024 - Present",
-    description: "Key responsibilities: Developing and maintaining strong client relationships, Identifying new business opportunities, Collaborating with cross-functional teams to deliver tailored solutions, Supporting the implementation of digital transformation strategies, Engaging in recruitment phases to meet client talent requirements.",
+    description: "Key responsibilities:Developing and maintaining strong client relationships across diverse industries (Insurance, Industrial & Manufacturing, Banking, Transport & Logistics).",
     logo: "devoteam-logo.png",
     skills: ["Business Development", "Cloud", "Data" , "AI", "Sales", "Recruitment", "Digital Workplace", "Customer Relationship Management", "Customer Service",]
   }
