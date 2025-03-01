@@ -67,29 +67,9 @@ export default function Home() {
       {/* Experience */}
       <section className="space-y-4">
         <h2 className="text-2xl font-semibold">Experience 💼</h2>
-        <div className="grid gap-4">
-          {experiences.map((exp) => (
-            <Card key={exp.company} className="p-6">
-              <div className="flex items-start gap-4">
-                {exp.logo && (
-                  <div className="relative h-16 w-16 flex-shrink-0">
-                    <Image src={exp.logo} alt={exp.company} fill className="object-contain" />
-                  </div>
-                )}
-                <div>
-                  <h3 className="text-lg font-medium">{exp.role}</h3>
-                  <p className="text-sm text-muted-foreground">{exp.company} • {exp.duration}</p>
-                  <p className="mt-2 text-sm">{exp.description}</p>
-                  {exp.skills && (
-                    <div className="mt-3 flex flex-wrap gap-2">
-                      {exp.skills.map(skill => (
-                        <Badge key={skill} variant="secondary">{skill}</Badge>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              </div>
-            </Card>
+        <div className="grid gap-4 md:grid-cols-1">
+          {experiences.map((exp, i) => (
+            <ExperienceCard key={i} experience={exp} />
           ))}
         </div>
       </section>
@@ -99,15 +79,7 @@ export default function Home() {
         <h2 className="text-2xl font-semibold">Certifications 🎓</h2>
         <div className="grid gap-4">
 
-{/* Exemple d'utilisation dans votre page principale (ajoutez ceci à l'endroit approprié) */}
-<section className="py-8">
-  <h2 className="text-2xl font-bold mb-4">Expérience professionnelle</h2>
-  <div className="grid gap-4 md:grid-cols-1">
-    {experiences.map((exp, i) => (
-      <ExperienceCard key={i} experience={exp} />
-    ))}
-  </div>
-</section>
+
 
           {certifications.map((cert) => (
             <CertificationCard key={cert.title} certification={cert} />
