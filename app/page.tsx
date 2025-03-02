@@ -21,7 +21,7 @@ export default function Home() {
         <p className="text-lg text-muted-foreground">{profile.bio}</p>
         
         {/* Social Media Links */}
-        <div className="flex gap-3 pt-2">
+        <div className="flex gap-3 pt-2 justify-center">
           <Button asChild variant="outline" size="sm">
             <Link href={profile.social.twitter} target="_blank">
               <Twitter className="mr-1 h-4 w-4" />
