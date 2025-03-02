@@ -90,48 +90,50 @@ export default function Home() {
       {/* Projects */}
       <section className="space-y-4">
         <h2 className="text-2xl font-semibold">Fun Projects 🎨</h2>
-        <div className="grid gap-6">
-          {projects.map((project) => (
-            <Card key={project.name} className="overflow-hidden">
-              <div className="relative h-48 w-full">
-                <Image
-                  src={project.image}
-                  alt={project.name}
-                  fill
-                  loading="lazy"
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-medium mb-2">{project.name}</h3>
-                <p className="text-muted-foreground mb-4">{project.description}</p>
-                {project.tags && (
-                  <div className="flex gap-2 mb-4 flex-wrap">
-                    {project.tags.map((tag) => (
-                      <Badge key={tag} variant="secondary">{tag}</Badge>
-                    ))}
-                  </div>
-                )}
-                <div className="flex gap-2">
-                  <Button asChild variant="outline" size="sm">
-                    <Link href={project.github} target="_blank">
-                      <Github className="mr-2 h-4 w-4" />
-                      GitHub
-                    </Link>
-                  </Button>
-                  {project.demo && (
-                    <Button asChild size="sm">
-                      <Link href={project.demo} target="_blank">
-                        <ExternalLink className="mr-2 h-4 w-4" />
-                        Demo
+        <div className="projects-carousel overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 transition-transform hover:pause-animation">
+            {projects.map((project) => (
+              <Card key={project.name} className="project-tile overflow-hidden h-full transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                <div className="relative h-40 w-full">
+                  <Image
+                    src={project.image}
+                    alt={project.name}
+                    fill
+                    loading="lazy"
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="p-4 flex flex-col h-[calc(100%-10rem)]">
+                  <h3 className="text-lg font-medium mb-2">{project.name}</h3>
+                  <p className="text-sm text-muted-foreground mb-3 flex-grow">{project.description}</p>
+                  {project.tags && (
+                    <div className="flex gap-1 mb-3 flex-wrap">
+                      {project.tags.map((tag) => (
+                        <Badge key={tag} variant="secondary" className="text-xs">{tag}</Badge>
+                      ))}
+                    </div>
+                  )}
+                  <div className="flex gap-2 mt-auto">
+                    <Button asChild variant="outline" size="sm" className="h-8 px-3 text-xs">
+                      <Link href={project.github} target="_blank">
+                        <Github className="mr-1 h-3 w-3" />
+                        GitHub
                       </Link>
                     </Button>
-                  )}
+                    {project.demo && (
+                      <Button asChild size="sm" className="h-8 px-3 text-xs">
+                        <Link href={project.demo} target="_blank">
+                          <ExternalLink className="mr-1 h-3 w-3" />
+                          Demo
+                        </Link>
+                      </Button>
+                    )}
+                  </div>
                 </div>
-              </div>
-            </Card>
-          ))}
+              </Card>
+            ))}
+          </div>
         </div>
       </section>
 

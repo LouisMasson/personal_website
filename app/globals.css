@@ -1,5 +1,42 @@
 @tailwind base;
 @tailwind components;
+
+/* Animation de défilement pour les projets */
+@keyframes slideProjects {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
+}
+
+.projects-carousel {
+  position: relative;
+}
+
+.projects-carousel:hover .hover\:pause-animation {
+  animation-play-state: paused;
+}
+
+@media (min-width: 768px) {
+  .projects-carousel .grid {
+    animation: slideProjects 30s linear infinite alternate;
+  }
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.project-tile:hover {
+  z-index: 10;
+}
+
+
 @tailwind utilities;
 
 :root {
