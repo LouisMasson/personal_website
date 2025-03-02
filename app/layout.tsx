@@ -30,10 +30,7 @@ export default function RootLayout({
           enabled={process.env.NODE_ENV === 'production'}
         />
       </head>
-      <body className={cn(
-        inter.className,
-        "min-h-screen bg-background antialiased transition-colors duration-300"
-      )}>
+      <body className={`min-h-screen bg-background antialiased transition-colors duration-300`} suppressHydrationWarning>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
