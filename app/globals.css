@@ -1,42 +1,23 @@
 @tailwind base;
 @tailwind components;
 
-/* Animation de défilement pour les projets */
-@keyframes slideProjects {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-5%);
-  }
-}
-
-.projects-carousel {
+/* Style des projets sans animation */
+.projects-grid {
   position: relative;
-  overflow: hidden;
   width: 100%;
   padding: 0 0.5rem;
-}
-
-.projects-carousel:hover .hover\:pause-animation {
-  animation-play-state: paused;
-}
-
-@media (min-width: 768px) {
-  .projects-carousel .grid {
-    animation: slideProjects 30s linear infinite alternate;
-    width: 110%; /* Ensure there's extra width for animation */
-  }
 }
 
 .project-tile {
   display: flex;
   flex-direction: column;
   height: 100%;
-  backface-visibility: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-tile:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
   z-index: 10;
 }
 
