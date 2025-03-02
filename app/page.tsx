@@ -90,7 +90,7 @@ export default function Home() {
       {/* Projects */}
       <section className="space-y-4">
         <h2 className="text-2xl font-semibold">Fun Projects 🎨</h2>
-        <div className="projects-carousel overflow-hidden">
+        <div className="projects-carousel">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 transition-transform hover:pause-animation">
             {projects.map((project) => (
               <Card key={project.name} className="project-tile overflow-hidden h-full transform transition-all duration-300 hover:scale-105 hover:shadow-lg">

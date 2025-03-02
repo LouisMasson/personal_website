@@ -7,12 +7,15 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-10%);
+    transform: translateX(-5%);
   }
 }
 
 .projects-carousel {
   position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 0 0.5rem;
 }
 
 .projects-carousel:hover .hover\:pause-animation {
@@ -22,6 +25,7 @@
 @media (min-width: 768px) {
   .projects-carousel .grid {
     animation: slideProjects 30s linear infinite alternate;
+    width: 110%; /* Ensure there's extra width for animation */
   }
 }
 
