@@ -46,11 +46,11 @@ export default function Home() {
       {/* Technologies */}
       <section className="space-y-4">
         <h2 className="text-2xl font-semibold">Technologies & Tools that I Love 💻</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
           {technologies.map((tech) => (
-            <Card key={tech.name} className="p-4 text-center">
-              <div className="text-2xl mb-2">{tech.emoji}</div>
-              <div className="font-medium">{tech.name}</div>
+            <Card key={tech.name} className="tech-tile text-center">
+              <div className="text-xl mb-1">{tech.emoji}</div>
+              <div className="font-medium text-sm">{tech.name}</div>
             </Card>
           ))}
         </div>
@@ -60,6 +60,36 @@ export default function Home() {
       <section className="space-y-4">
         <h2 className="text-2xl font-semibold">What Drives Me 🚀</h2>
         <p className="text-muted-foreground">{profile.passion}</p>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+          <Card className="p-4 border-l-4 border-blue-500">
+            <h3 className="font-medium mb-2">AI-Powered Innovation</h3>
+            <p className="text-sm text-muted-foreground">
+              I'm fascinated by how AI can transform business processes and create new possibilities for growth. Exploring AI applications that enhance human capabilities rather than replace them is what excites me most.
+            </p>
+          </Card>
+          
+          <Card className="p-4 border-l-4 border-green-500">
+            <h3 className="font-medium mb-2">Democratizing Technology</h3>
+            <p className="text-sm text-muted-foreground">
+              I believe in making powerful technologies accessible to everyone. Self-hosting solutions and open-source alternatives empower users to maintain control over their digital lives while enjoying cutting-edge capabilities.
+            </p>
+          </Card>
+          
+          <Card className="p-4 border-l-4 border-purple-500">
+            <h3 className="font-medium mb-2">Continuous Learning</h3>
+            <p className="text-sm text-muted-foreground">
+              The tech landscape evolves rapidly, and staying curious is essential. I dedicate time each week to explore new tools, technologies, and methodologies that can expand my perspective and capabilities.
+            </p>
+          </Card>
+          
+          <Card className="p-4 border-l-4 border-orange-500">
+            <h3 className="font-medium mb-2">Sports & Well-being</h3>
+            <p className="text-sm text-muted-foreground">
+              Beyond technology, I'm passionate about maintaining a healthy body and mind. Windsurfing and other sports not only provide physical benefits but also teach persistence, adaptability, and focus—skills that translate perfectly to professional challenges.
+            </p>
+          </Card>
+        </div>
       </section>
 
       {/* Education */}
