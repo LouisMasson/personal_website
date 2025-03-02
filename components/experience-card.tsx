@@ -17,6 +17,7 @@ export function ExperienceCard({ experience }: { experience: Experience }) {
               width={64}
               height={64}
               className="object-contain"
+              style={{ width: 'auto', height: 'auto' }}
             />
           </div>
         )}

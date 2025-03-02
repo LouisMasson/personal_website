@@ -98,7 +98,9 @@ export default function Home() {
                   src={project.image}
                   alt={project.name}
                   fill
+                  loading="lazy"
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
               <div className="p-6">

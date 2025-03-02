@@ -1,11 +1,13 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import { ThemeProvider } from '@/components/theme-provider'
-import { cn } from '@/lib/utils'
 import { Navigation } from '@/components/navigation'
 import PlausibleProvider from 'next-plausible'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ 
+  subsets: ['latin'],
+  display: 'swap', // Optimisation pour le chargement des polices
+})
 
 export const metadata = {
   title: 'Louis Masson - Personal Website',
@@ -23,14 +25,19 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <PlausibleProvider 
-          domain="louismasson.patronusguardian.org"
-          customDomain="https://analytics.patronusguardian.org"
-          trackOutboundLinks={true}
-          enabled={process.env.NODE_ENV === 'production'}
-        />
+        {process.env.NODE_ENV === 'production' && (
+          <PlausibleProvider 
+            domain="louismasson.patronusguardian.org"
+            customDomain="https://analytics.patronusguardian.org"
+            trackOutboundLinks={true}
+            enabled={true}
+          />
+        )}
       </head>
-      <body className={`min-h-screen bg-background antialiased transition-colors duration-300`} suppressHydrationWarning>
+      <body 
+        className={`${inter.className} min-h-screen bg-background antialiased transition-colors duration-300`} 
+        suppressHydrationWarning
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
