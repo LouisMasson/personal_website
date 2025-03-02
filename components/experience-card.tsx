@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Image from 'next/image';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
@@ -13,11 +12,11 @@ export function ExperienceCard({ experience }: { experience: Experience }) {
         {experience.logo && (
           <div className="relative h-16 w-16 overflow-hidden rounded-md">
             <Image
-              src={`/${experience.logo}`}
+              src={experience.logo}
               alt={experience.company}
               width={64}
               height={64}
-              className="object-cover"
+              className="object-contain"
             />
           </div>
         )}
@@ -28,9 +27,9 @@ export function ExperienceCard({ experience }: { experience: Experience }) {
       </CardHeader>
       <CardContent className="p-4 pt-0">
         <p className="text-sm">{experience.description}</p>
-        
+
         {experience.bulletPoints && <ExperienceBullets points={experience.bulletPoints} />}
-        
+
         {experience.skills && (
           <div className="flex flex-wrap gap-2 mt-4">
             {experience.skills.map((skill) => (
