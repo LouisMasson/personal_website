@@ -184,6 +184,15 @@ export const projects: Project[] = [
     demo: "https://currency-tip-lmasson.replit.app/", // Ajout du lien de démo
     tags: ["React-native", "Typrescript", "Replit", "Gemini", "Finance API"]
   },
+
+  {
+    name: "Little Fancy Snake Game built with Windsurf",
+    description: "A fancy way to play Snake Game",
+    image: "Snake_game.png",
+    github: "https://github.com/LouisMasson/snake_game",
+    demo: "https://louismasson.github.io/snake_game/snake.html", // Ajout du lien de démo
+    tags: ["Windsurg", "HTML", "JS", "Claude Sonnet 3.7"]
+  },
   
 ]
 
