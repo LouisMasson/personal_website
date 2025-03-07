@@ -153,6 +153,16 @@ credentialUrl:"https://eu.badgr.com/public/assertions/FoibiNFQQeSS4j8sT9w4ag",
       credentialUrl:"https://learn.deeplearning.ai/accomplishments/85d90dc5-4800-4a20-b925-84d34f4d7b32?usp=sharing",
       skills: ["Windsurf", "Data", "AI", "Agent Coding"]
     },
+
+    {
+      title: "Multi AI Agent Systems with crewAI",
+      issuer: "DeepLearning.AI & CrewAI",
+      date: "2025",
+      description: "Automate business workflows with multi-AI agent systems. Exceed the performance of prompting a single LLM by designing and prompting a team of AI agents through natural language.",
+      badge: "Deeplearning.jpg",
+      credentialUrl:"https://learn.deeplearning.ai/accomplishments/83cb54cc-739f-4937-a867-2bf031694497",
+      skills: ["CrewAI", "Agentic", "AI", "Task" , "Role"]
+    },
   // Add more certifications as needed
 ]
 
