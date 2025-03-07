@@ -110,7 +110,7 @@ export const certifications: Certification[] = [
     date: "2024",
     description: "Certification on Gen AI for Devoteam Employee",
     badge: "Genai_devoteam.png",
-credentialUrl:"https://eu.badgr.com/public/assertions/FoibiNFQQeSS4j8sT9w4ag",
+    credentialUrl:"https://eu.badgr.com/public/assertions/FoibiNFQQeSS4j8sT9w4ag",
     skills: ["Gen AI","Model Deployment"]
   },
 
@@ -120,10 +120,10 @@ credentialUrl:"https://eu.badgr.com/public/assertions/FoibiNFQQeSS4j8sT9w4ag",
     date: "2024",
     description: "Certification on Gen AI for Devoteam Employee",
     badge: "Genai_devoteam.png",
-  credentialUrl:"https://eu.badgr.com/public/assertions/WEhtqk74TqSspbzbypDk8w",
+    credentialUrl:"https://eu.badgr.com/public/assertions/WEhtqk74TqSspbzbypDk8w",
     skills: ["Gen AI","Model Deployment"]
   },
-  
+
   {
     title: "Microsoft Certified Azure Fundemantals",
     issuer: "Microsoft",
@@ -161,7 +161,7 @@ credentialUrl:"https://eu.badgr.com/public/assertions/FoibiNFQQeSS4j8sT9w4ag",
       description: "Automate business workflows with multi-AI agent systems. Exceed the performance of prompting a single LLM by designing and prompting a team of AI agents through natural language.",
       badge: "Deeplearning.jpg",
       credentialUrl:"https://learn.deeplearning.ai/accomplishments/83cb54cc-739f-4937-a867-2bf031694497",
-      skills: ["CrewAI", "Agentic", "AI", "Task" , "Role"]
+      skills: ["CrewAI", "Agentic", "AI", "Task", "Role"]
     },
   // Add more certifications as needed
 ]
@@ -203,7 +203,7 @@ export const projects: Project[] = [
     demo: "https://louismasson.github.io/snake_game/snake.html", // Ajout du lien de démo
     tags: ["Windsurg", "HTML", "JS", "Claude Sonnet 3.7"]
   },
-  
+
 ]
 
 export const education: Education[] = [
@@ -268,7 +268,7 @@ export const experiences: Experience[] = [
     logo: "acteam_it_logo.png",
     skills: ["Business Development", "Sales", "ICT services", "Customer Relationship Management", "Customer Service"]
   }
-  
+
 ]
 
 export const books = {
