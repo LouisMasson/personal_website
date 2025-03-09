@@ -2,12 +2,8 @@
 import React from 'react';
 import { Metadata } from 'next';
 import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Download, ExternalLink } from "lucide-react";
 import Link from "next/link";
-import { experiences, education, certifications } from "@/lib/content";
-import { ExperienceCard } from "@/components/experience-card";
-import Image from "next/image";
-import { Badge } from "@/components/ui/badge";
 
 export const metadata: Metadata = {
   title: 'Resume - Louis Masson',
@@ -16,102 +12,55 @@ export const metadata: Metadata = {
 
 export default function ResumePage() {
   return (
-    <div className="container mx-auto px-4 py-12 max-w-3xl">
-      <div className="mb-8">
-        <Button asChild variant="ghost" className="pl-0 mb-4">
+    <div className="space-y-8">
+      <div className="flex items-center mb-6">
+        <Button asChild variant="ghost" size="sm" className="mr-4">
           <Link href="/">
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Home
+            <ArrowLeft className="h-4 w-4 mr-2" />
+            Retour
           </Link>
         </Button>
-        <h1 className="text-4xl font-bold mb-4">Professional Resume</h1>
-        <p className="text-lg text-muted-foreground">
-          Download my complete resume or view the details below.
-        </p>
-        <div className="mt-4">
-          <Button asChild>
-            <Link href="/louis_masson_cv.pdf" target="_blank">
-              Download PDF
-            </Link>
-          </Button>
-        </div>
+        <h1 className="text-3xl font-bold">Resume</h1>
+        <Button asChild variant="outline" size="sm" className="ml-auto">
+          <a href="/louis_masson_cv.pdf" download>
+            <Download className="mr-2 h-4 w-4" />
+            Télécharger PDF
+          </a>
+        </Button>
       </div>
 
-      <div className="space-y-12">
-        {/* Experience */}
-        <section>
-          <h2 className="text-2xl font-semibold mb-4">Experience</h2>
-          <div className="grid gap-4">
-            {experiences.map((exp, i) => (
-              <ExperienceCard key={i} experience={exp} />
-            ))}
-          </div>
-        </section>
-
-        {/* Education */}
-        <section>
-          <h2 className="text-2xl font-semibold mb-4">Education</h2>
-          <div className="grid gap-4">
-            {education.map((edu) => (
-              <div key={edu.school} className="border rounded-lg p-4">
-                <div className="flex items-start gap-4">
-                  {edu.logo && (
-                    <div className="relative h-16 w-16 flex-shrink-0">
-                      <Image src={`/${edu.logo}`} alt={edu.school} width={64} height={64} className="object-contain" />
-                    </div>
-                  )}
-                  <div>
-                    <h3 className="text-lg font-medium">{edu.school}</h3>
-                    <p className="text-sm text-muted-foreground">{edu.degree} • {edu.field}</p>
-                    <p className="text-sm text-muted-foreground">{edu.duration}</p>
-                    {edu.description && <p className="mt-2 text-sm">{edu.description}</p>}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Certifications */}
-        <section>
-          <h2 className="text-2xl font-semibold mb-4">Certifications</h2>
-          <div className="grid gap-4">
-            {certifications.map((cert) => (
-              <div key={cert.title} className="border rounded-lg p-4">
-                <div className="flex items-start gap-4">
-                  {cert.badge && (
-                    <div className="relative h-16 w-16 flex-shrink-0">
-                      <Image src={`/${cert.badge}`} alt={cert.title} width={64} height={64} className="object-contain" />
-                    </div>
-                  )}
-                  <div className="flex-1">
-                    <h3 className="text-lg font-medium">{cert.title}</h3>
-                    <p className="text-sm text-muted-foreground">{cert.issuer} • {cert.date}</p>
-                    <p className="mt-1 text-sm">{cert.description}</p>
-                    
-                    {cert.skills && (
-                      <div className="flex flex-wrap gap-1 mt-2">
-                        {cert.skills.map((skill) => (
-                          <Badge key={skill} variant="secondary" className="text-xs">{skill}</Badge>
-                        ))}
-                      </div>
-                    )}
-                    
-                    {cert.credentialUrl && (
-                      <div className="mt-2">
-                        <Button asChild variant="link" className="p-0 h-auto text-xs">
-                          <Link href={cert.credentialUrl} target="_blank">
-                            Verify Credential
-                          </Link>
-                        </Button>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
+      <div className="bg-card rounded-lg overflow-hidden shadow-md border border-gray-200 dark:border-gray-800">
+        <div style={{ position: 'relative', width: '100%', height: '0', paddingTop: '141.4286%' }}>
+          <iframe 
+            loading="lazy" 
+            style={{ 
+              position: 'absolute', 
+              width: '100%', 
+              height: '100%', 
+              top: 0, 
+              left: 0, 
+              border: 'none', 
+              padding: 0,
+              margin: 0
+            }}
+            src="https://www.canva.com/design/DAFitOEw254/sV4v0hGTFUjpTvwYt31XMA/view?embed" 
+            allowFullScreen
+            title="Louis Masson's Resume"
+          />
+        </div>
+        <div className="p-6 flex justify-center">
+          <Button asChild size="lg" className="shadow-sm hover:shadow-md transition-all duration-300">
+            <a 
+              href="https://www.canva.com/design/DAFitOEw254/sV4v0hGTFUjpTvwYt31XMA/view" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2"
+            >
+              <ExternalLink className="h-5 w-5" />
+              Voir en plein écran
+            </a>
+          </Button>
+        </div>
       </div>
     </div>
   );

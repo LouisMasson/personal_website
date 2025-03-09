@@ -12,7 +12,7 @@ export function ExperienceCard({ experience }: { experience: Experience }) {
         {experience.logo && (
           <div className="relative h-16 w-16 overflow-hidden rounded-md">
             <Image
-              src={`/${experience.logo}`}
+              src={experience.logo}
               alt={experience.company}
               width={64}
               height={64}
