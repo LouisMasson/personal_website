@@ -21,6 +21,11 @@
   z-index: 10;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* Smaller tech tiles */
 .tech-tile {
   padding: 0.75rem;

@@ -1,12 +1,11 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import { ThemeProvider } from '@/components/theme-provider'
-import { Navigation } from '@/components/navigation'
 import PlausibleProvider from 'next-plausible'
 
 const inter = Inter({ 
   subsets: ['latin'],
-  display: 'swap', // Optimisation pour le chargement des polices
+  display: 'swap', 
 })
 
 export const metadata = {
@@ -16,6 +15,21 @@ export const metadata = {
     icon: 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖥️</text></svg>'
   }
 }
+
+function Header() {
+  return (
+    <header className="fixed top-0 left-0 w-full bg-white z-10 shadow-md">
+      <nav className="container mx-auto px-4 py-2 flex justify-between items-center">
+        <h1 className="text-xl font-bold">Louis Masson</h1>
+        <ul className="flex space-x-4">
+          <li><a href="#projects" className="text-blue-500 hover:underline">Fun Projects</a></li>
+          <li><a href="#experience" className="text-blue-500 hover:underline">Experience</a></li>
+        </ul>
+      </nav>
+    </header>
+  );
+}
+
 
 export default function RootLayout({
   children,
@@ -44,8 +58,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navigation />
-          <main className="container mx-auto px-4 py-8 max-w-3xl">
+          <Header />
+          <main className="container mx-auto px-4 py-8 max-w-3xl mt-16">
             {children}
           </main>
           <footer className="text-center py-4 text-sm text-muted-foreground border-t">

@@ -126,7 +126,7 @@ export default function Home() {
       </section>
 
       {/* Experience */}
-      <section className="space-y-4">
+      <section id="experience" className="space-y-4 scroll-mt-20">
         <h2 className="text-2xl font-semibold">Experience 💼</h2>
         <div className="grid gap-4 md:grid-cols-1">
           {experiences.map((exp, i) => (
@@ -146,7 +146,7 @@ export default function Home() {
       </section>
     
       {/* Projects */}
-      <section className="space-y-4">
+      <section id="projects" className="space-y-4 scroll-mt-20">
         <h2 className="text-2xl font-semibold">Fun Projects 🎨</h2>
         <div className="projects-grid">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
