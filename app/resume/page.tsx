@@ -17,14 +17,14 @@ export default function ResumePage() {
         <Button asChild variant="ghost" size="sm" className="mr-4">
           <Link href="/">
             <ArrowLeft className="h-4 w-4 mr-2" />
-            Retour
+            Back to home
           </Link>
         </Button>
         <h1 className="text-3xl font-bold">Resume</h1>
         <Button asChild variant="outline" size="sm" className="ml-auto">
           <a href="/louis_masson_cv.pdf" download>
             <Download className="mr-2 h-4 w-4" />
-            Télécharger PDF
+            Download as PDF
           </a>
         </Button>
       </div>
@@ -57,7 +57,7 @@ export default function ResumePage() {
               className="flex items-center gap-2"
             >
               <ExternalLink className="h-5 w-5" />
-              Voir en plein écran
+              Full screen view
             </a>
           </Button>
         </div>
