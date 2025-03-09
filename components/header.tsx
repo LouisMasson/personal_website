@@ -10,11 +10,11 @@ export function Header() {
   const { setTheme, theme } = useTheme()
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/70 backdrop-blur-sm border-b">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center max-w-3xl">
         <div className="flex gap-6">
-          <Link href="/" className="font-medium hover:text-primary">
-            Home
+          <Link href="/" className="font-medium hover:text-primary text-xl">
+            👋
           </Link>
           <Link href="#experience" className="hover:text-primary">
             Experience
