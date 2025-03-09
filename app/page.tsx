@@ -10,10 +10,18 @@ import { CertificationCard } from "@/components/certification-card"
 import { certifications } from "@/lib/content"
 import { ExperienceCard } from "@/components/experience-card"
 
+import { YouTubeVideos } from "@/components/youtube-videos"
+
 export default function Home() {
   return (
     <div className="space-y-16">
       <ProfileHeader profile={profile} />
+      
+      {/* Latest YouTube Videos */}
+      <section className="space-y-4">
+        <h2 className="text-2xl font-semibold">Latest Devoteam Videos 📺</h2>
+        <YouTubeVideos />
+      </section>
 
       {/* About Me */}
       <section className="space-y-4">
