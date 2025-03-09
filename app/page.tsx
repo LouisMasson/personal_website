@@ -5,7 +5,7 @@ import { Github, Twitter, Linkedin, ExternalLink } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import { ProfileHeader } from "@/components/profile-header"
-import { profile, technologies, projects, education, experiences } from "@/lib/content"
+import { profile, technologyCategories, projects, education, experiences } from "@/lib/content"
 import { CertificationCard } from "@/components/certification-card"
 import { certifications } from "@/lib/content"
 import { ExperienceCard } from "@/components/experience-card"
@@ -44,16 +44,25 @@ export default function Home() {
       </section>
 
       {/* Technologies */}
-      <section className="space-y-4">
+      <section className="space-y-6">
         <h2 className="text-2xl font-semibold">Technologies & Tools that I Love 💻</h2>
-        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
-          {technologies.map((tech) => (
-            <Card key={tech.name} className="tech-tile text-center">
-              <div className="text-xl mb-1">{tech.emoji}</div>
-              <div className="font-medium text-sm">{tech.name}</div>
-            </Card>
-          ))}
-        </div>
+        
+        {technologyCategories.map((category) => (
+          <div key={category.name} className="space-y-3">
+            <div className="flex items-center gap-2">
+              <div className="text-xl">{category.emoji}</div>
+              <h3 className="text-lg font-medium">{category.name}</h3>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+              {category.technologies.map((tech) => (
+                <Card key={tech.name} className="tech-tile text-center">
+                  <div className="text-xl mb-1">{tech.emoji}</div>
+                  <div className="font-medium text-sm">{tech.name}</div>
+                </Card>
+              ))}
+            </div>
+          </div>
+        ))}
       </section>
 
       {/* Passion */}

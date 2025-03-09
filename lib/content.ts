@@ -71,16 +71,40 @@ export const profile: Profile = {
   }
 }
 
-export const technologies: Technology[] = [
-  { name: "Replit", emoji: "🔸" },
-  { name: "Cursor", emoji: "▪️" },
-  { name: "Windsurf", emoji: "🏄‍♂️" },
-  { name: "Perplexity", emoji: "🔹" },
-  { name: "HuggingFace", emoji: "🤗" },
-  { name: "Runtipi", emoji: "⛺" },
-  { name: "Coolify", emoji: "🆒" },
-  { name: "Python", emoji: "🐍" },
-  { name: "Streamlit", emoji: "💻" },
+export interface TechnologyCategory {
+  name: string;
+  emoji: string;
+  technologies: Technology[];
+}
+
+export const technologyCategories: TechnologyCategory[] = [
+  {
+    name: "AI-Powered IDEs",
+    emoji: "🧠",
+    technologies: [
+      { name: "Replit", emoji: "🔸" },
+      { name: "Cursor", emoji: "▪️" },
+      { name: "Windsurf", emoji: "🏄‍♂️" },
+      { name: "Perplexity", emoji: "🔹" },
+    ]
+  },
+  {
+    name: "Self-Hosting",
+    emoji: "🏠",
+    technologies: [
+      { name: "Runtipi", emoji: "⛺" },
+      { name: "Coolify", emoji: "🆒" },
+      { name: "HuggingFace", emoji: "🤗" },
+    ]
+  },
+  {
+    name: "Development Tools",
+    emoji: "🛠️",
+    technologies: [
+      { name: "Python", emoji: "🐍" },
+      { name: "Streamlit", emoji: "💻" },
+    ]
+  }
 ]
 
 export interface Certification {

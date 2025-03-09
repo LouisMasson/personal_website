@@ -32,6 +32,11 @@
   transform: scale(1.05);
 }
 
+/* Technology category styling */
+.tech-category {
+  transition: all 0.3s ease;
+}
+
 
 @tailwind utilities;
 
