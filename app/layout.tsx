@@ -20,11 +20,11 @@ function Header() {
   return (
     <header className="fixed top-0 left-0 w-full bg-white/70 backdrop-blur-sm z-10 shadow-md">
       <nav className="container mx-auto px-4 py-2 flex justify-between items-center">
-        <h1 className="text-xl font-bold">👋</h1>
+        <h1 className="text-xl font-bold"><a href="/" className="text-black">👋</a></h1>
         <ul className="flex space-x-4">
-          <li><a href="#projects" className="text-blue-500 hover:underline">Fun Projects</a></li>
-          <li><a href="#experience" className="text-blue-500 hover:underline">Experience</a></li>
-          <li><a href="/resume" className="text-blue-500 hover:underline">Resume</a></li>
+          <li><a href="#projects" className="text-black hover:underline">Fun Projects</a></li>
+          <li><a href="#experience" className="text-black hover:underline">Experience</a></li>
+          <li><a href="/resume" className="text-black hover:underline">Resume</a></li>
         </ul>
       </nav>
     </header>

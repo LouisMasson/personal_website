@@ -7,12 +7,24 @@ export const metadata: Metadata = {
   description: 'Professional resume of Louis Masson',
 };
 
+import { Button } from "@/components/ui/button";
+import { ArrowLeft } from "lucide-react";
+import Link from "next/link";
+
 export default function ResumePage() {
   return (
     <div className="space-y-8">
-      <h1 className="text-3xl font-bold mb-6">Resume</h1>
+      <div className="flex items-center mb-6 gap-4">
+        <Button asChild variant="outline" size="sm">
+          <Link href="/">
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Back to Home
+          </Link>
+        </Button>
+        <h1 className="text-3xl font-bold">Resume</h1>
+      </div>
       
-      <div className="bg-card rounded-lg shadow-sm overflow-hidden">
+      <div className="bg-card rounded-lg overflow-hidden border-2 border-black">
         <div style={{ position: 'relative', width: '100%', height: '0', paddingTop: '141.4286%' }}>
           <iframe 
             loading="lazy" 
