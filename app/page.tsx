@@ -9,11 +9,17 @@ import { profile, technologyCategories, projects, education, experiences } from 
 import { CertificationCard } from "@/components/certification-card"
 import { certifications } from "@/lib/content"
 import { ExperienceCard } from "@/components/experience-card"
+import { YouTubeVideos } from "@/components/youtube-videos"
 
 export default function Home() {
   return (
     <div className="space-y-16">
       <ProfileHeader profile={profile} />
+      
+      {/* YouTube Videos */}
+      <section className="space-y-4">
+        <YouTubeVideos />
+      </section>
 
       {/* About Me */}
       <section className="space-y-4">
