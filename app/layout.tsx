@@ -16,30 +16,6 @@ export const metadata = {
   }
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <head />
-      <body className={`${inter.className} min-h-screen bg-background antialiased transition-colors duration-300`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
-      </body>
-    </html>
-  )
-}
-  }
-}
-
 function Header() {
   return (
     <header className="fixed top-0 left-0 w-full bg-white/70 backdrop-blur-sm z-10 shadow-md">
@@ -73,7 +49,6 @@ function Header() {
     </header>
   );
 }
-
 
 export default function RootLayout({
   children,
