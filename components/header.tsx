@@ -1,4 +1,3 @@
-
 "use client"
 
 import Link from "next/link"
@@ -16,19 +15,22 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/70 backdrop-blur-sm border-b">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center max-w-3xl">
         <div className="flex gap-6">
-          <Link href="/" className="font-medium hover:text-primary text-xl text-black">
-            👋
+          <Link href="/" className="font-medium text-xl text-black relative group">
+            <span className="transition-transform duration-300 inline-block group-hover:animate-bounce">👋</span>
           </Link>
           {!isResumePage && (
             <>
-              <Link href="#experience" className="hover:text-primary text-black">
-                Experience
+              <Link href="#experience" className="text-black relative group">
+                <span className="inline-block transition-all duration-300 group-hover:text-primary">Experience</span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </Link>
-              <Link href="#projects" className="hover:text-primary text-black">
-                Fun Projects
+              <Link href="#projects" className="text-black relative group">
+                <span className="inline-block transition-all duration-300 group-hover:text-primary">Fun Projects</span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </Link>
-              <Link href="/resume" className="hover:text-primary text-black">
-                Resume
+              <Link href="/resume" className="text-black relative group">
+                <span className="inline-block transition-all duration-300 group-hover:text-primary">Resume</span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </Link>
             </>
           )}

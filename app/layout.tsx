@@ -20,11 +20,30 @@ function Header() {
   return (
     <header className="fixed top-0 left-0 w-full bg-white/70 backdrop-blur-sm z-10 shadow-md">
       <nav className="container mx-auto px-4 py-2 flex justify-between items-center">
-        <h1 className="text-xl font-bold"><a href="/" className="text-black">👋</a></h1>
+        <h1 className="text-xl font-bold">
+          <a href="/" className="text-black relative group">
+            <span className="transition-transform duration-300 inline-block group-hover:animate-bounce">👋</span>
+          </a>
+        </h1>
         <ul className="flex space-x-4">
-          <li><a href="#projects" className="text-black hover:underline">Fun Projects</a></li>
-          <li><a href="#experience" className="text-black hover:underline">Experience</a></li>
-          <li><a href="/resume" className="text-black hover:underline">Resume</a></li>
+          <li>
+            <a href="#projects" className="text-black relative group">
+              <span className="inline-block transition-all duration-300 group-hover:text-primary">Fun Projects</span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#experience" className="text-black relative group">
+              <span className="inline-block transition-all duration-300 group-hover:text-primary">Experience</span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
+          <li>
+            <a href="/resume" className="text-black relative group">
+              <span className="inline-block transition-all duration-300 group-hover:text-primary">Resume</span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
