@@ -18,7 +18,7 @@ export function Header() {
           <Link href="/" className="font-medium text-xl text-black relative group">
             <span className="transition-transform duration-300 inline-block group-hover:animate-bounce">👋</span>
           </Link>
-          {!isResumePage && (
+          {!isResumePage ? (
             <>
               <Link href="#experience" className="text-black relative group">
                 <span className="inline-block transition-all duration-300 group-hover:text-primary">Experience</span>
@@ -33,6 +33,11 @@ export function Header() {
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </Link>
             </>
+          ) : (
+            <Link href="/" className="text-black relative group ml-2">
+              <span className="inline-block transition-all duration-300 group-hover:text-primary">Accueil</span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+            </Link>
           )}
         </div>
         <Button
