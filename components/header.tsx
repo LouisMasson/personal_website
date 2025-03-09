@@ -10,7 +10,12 @@ import { usePathname } from "next/navigation"
 export function Header() {
   const { setTheme, theme } = useTheme()
   const pathname = usePathname()
-  const isResumePage = pathname === "/resume"
+  
+  // Log le pathname pour voir sa valeur exacte
+  console.log("Current pathname:", pathname)
+  
+  // Utiliser une méthode plus robuste pour détecter la page resume
+  const isResumePage = pathname?.includes("/resume")
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/70 backdrop-blur-sm border-b">
