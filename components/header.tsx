@@ -11,11 +11,11 @@ export function Header() {
   const { setTheme, theme } = useTheme()
   const pathname = usePathname()
   
-  // Log le pathname pour voir sa valeur exacte
-  console.log("Current pathname:", pathname)
+  // Détection plus stricte de la page résumé
+  const isResumePage = pathname === "/resume" || pathname === "/resume/"
   
-  // Utiliser une méthode plus robuste pour détecter la page resume
-  const isResumePage = pathname?.includes("/resume")
+  // Débug
+  console.log("Current pathname:", pathname, "isResumePage:", isResumePage)
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/70 backdrop-blur-sm border-b">
@@ -26,11 +26,13 @@ export function Header() {
           </Link>
           
           {isResumePage ? (
+            // Page Résumé - Afficher seulement le lien Accueil
             <Link href="/" className="text-black relative group ml-2">
               <span className="inline-block transition-all duration-300 group-hover:text-primary">Accueil</span>
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </Link>
           ) : (
+            // Page d'accueil - Afficher tous les liens
             <>
               <Link href="#experience" className="text-black relative group">
                 <span className="inline-block transition-all duration-300 group-hover:text-primary">Experience</span>
