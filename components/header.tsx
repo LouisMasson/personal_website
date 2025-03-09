@@ -2,7 +2,7 @@
 "use client"
 
 import Link from "next/link"
-import { Moon, Sun } from "lucide-react"
+import { Moon, Sun, ArrowLeft } from "lucide-react"
 import { useTheme } from "next-themes"
 import { Button } from "@/components/ui/button"
 import { usePathname } from "next/navigation"
@@ -11,12 +11,24 @@ export function Header() {
   const { setTheme, theme } = useTheme()
   const pathname = usePathname()
   
-  // Détection plus stricte de la page résumé
+  // Détection de la page résumé
   const isResumePage = pathname === "/resume" || pathname === "/resume/"
   
-  // Débug
-  console.log("Current pathname:", pathname, "isResumePage:", isResumePage)
+  // Si on est sur la page résumé, on affiche seulement un bouton de retour
+  if (isResumePage) {
+    return (
+      <div className="fixed top-4 left-4 z-50">
+        <Button asChild variant="outline" size="sm">
+          <Link href="/">
+            <ArrowLeft className="mr-1 h-4 w-4" />
+            Back to Home
+          </Link>
+        </Button>
+      </div>
+    )
+  }
 
+  // Sinon, on affiche le header normal
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/70 backdrop-blur-sm border-b">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center max-w-3xl">
@@ -25,29 +37,18 @@ export function Header() {
             <span className="transition-transform duration-300 inline-block group-hover:animate-bounce">👋</span>
           </Link>
           
-          {isResumePage ? (
-            // Page Résumé - Afficher seulement le lien Accueil
-            <Link href="/" className="text-black relative group ml-2">
-              <span className="inline-block transition-all duration-300 group-hover:text-primary">Accueil</span>
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-          ) : (
-            // Page d'accueil - Afficher tous les liens
-            <>
-              <Link href="#experience" className="text-black relative group">
-                <span className="inline-block transition-all duration-300 group-hover:text-primary">Experience</span>
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-              </Link>
-              <Link href="#projects" className="text-black relative group">
-                <span className="inline-block transition-all duration-300 group-hover:text-primary">Fun Projects</span>
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-              </Link>
-              <Link href="/resume" className="text-black relative group">
-                <span className="inline-block transition-all duration-300 group-hover:text-primary">Resume</span>
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-              </Link>
-            </>
-          )}
+          <Link href="#experience" className="text-black relative group">
+            <span className="inline-block transition-all duration-300 group-hover:text-primary">Experience</span>
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+          </Link>
+          <Link href="#projects" className="text-black relative group">
+            <span className="inline-block transition-all duration-300 group-hover:text-primary">Fun Projects</span>
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+          </Link>
+          <Link href="/resume" className="text-black relative group">
+            <span className="inline-block transition-all duration-300 group-hover:text-primary">Resume</span>
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+          </Link>
         </div>
         <Button
           variant="ghost"
