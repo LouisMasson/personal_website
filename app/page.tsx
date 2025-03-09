@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Github, Twitter, Linkedin, ExternalLink } from "lucide-react"
+import { Github, Twitter, Linkedin, ExternalLink, Download } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import { ProfileHeader } from "@/components/profile-header"
@@ -39,6 +39,12 @@ export default function Home() {
               <Github className="mr-1 h-4 w-4" />
               GitHub
             </Link>
+          </Button>
+          <Button asChild variant="outline" size="sm">
+            <a href="/louis_masson_cv.pdf" download>
+              <Download className="mr-1 h-4 w-4" />
+              CV
+            </a>
           </Button>
         </div>
       </section>
