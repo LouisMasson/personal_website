@@ -24,6 +24,7 @@ function Header() {
         <ul className="flex space-x-4">
           <li><a href="#projects" className="text-blue-500 hover:underline">Fun Projects</a></li>
           <li><a href="#experience" className="text-blue-500 hover:underline">Experience</a></li>
+          <li><a href="/resume" className="text-blue-500 hover:underline">Resume</a></li>
         </ul>
       </nav>
     </header>

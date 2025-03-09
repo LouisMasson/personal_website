@@ -22,6 +22,9 @@ export function Header() {
           <Link href="#projects" className="hover:text-primary">
             Fun Projects
           </Link>
+          <Link href="/resume" className="hover:text-primary">
+            Resume
+          </Link>
         </div>
         <Button
           variant="ghost"
