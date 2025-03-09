@@ -11,10 +11,10 @@ interface CertificationCardProps {
 
 export function CertificationCard({ certification }: CertificationCardProps) {
   return (
-    <Card className="p-6">
-      <div className="flex items-start gap-4">
+    <Card className="p-3">
+      <div className="flex items-center gap-3">
         {certification.badge && (
-          <div className="relative h-16 w-16 flex-shrink-0">
+          <div className="relative h-12 w-12 flex-shrink-0">
             <Image
               src={certification.badge}
               alt={certification.title}
@@ -24,25 +24,26 @@ export function CertificationCard({ certification }: CertificationCardProps) {
           </div>
         )}
         <div className="flex-1">
-          <h3 className="text-lg font-medium">{certification.title}</h3>
-          <p className="text-sm text-muted-foreground">{certification.issuer} • {certification.date}</p>
-          <p className="mt-2 text-sm">{certification.description}</p>
+          <div className="flex items-center gap-2 justify-between">
+            <h3 className="text-base font-medium">{certification.title}</h3>
+            {certification.credentialUrl && (
+              <Link 
+                href={certification.credentialUrl}
+                target="_blank"
+                className="inline-flex items-center text-xs text-primary hover:underline"
+              >
+                <ExternalLink className="h-3 w-3" />
+              </Link>
+            )}
+          </div>
+          <p className="text-xs text-muted-foreground">{certification.issuer} • {certification.date}</p>
+          
           {certification.skills && (
-            <div className="mt-3 flex flex-wrap gap-2">
+            <div className="mt-1 flex flex-wrap gap-1">
               {certification.skills.map(skill => (
-                <Badge key={skill} variant="secondary">{skill}</Badge>
+                <Badge key={skill} variant="secondary" className="text-xs px-1.5 py-0">{skill}</Badge>
               ))}
             </div>
-          )}
-          {certification.credentialUrl && (
-            <Link 
-              href={certification.credentialUrl}
-              target="_blank"
-              className="mt-4 inline-flex items-center text-sm text-primary hover:underline"
-            >
-              View Credential
-              <ExternalLink className="ml-1 h-3 w-3" />
-            </Link>
           )}
         </div>
       </div>
