@@ -10,11 +10,13 @@ export function ExperienceCard({ experience }: { experience: Experience }) {
     <Card className="overflow-hidden">
       <CardHeader className="flex flex-row items-center gap-4 p-4">
         {experience.logo && (
-          <div className="relative h-16 w-16 flex-shrink-0" style={{ position: 'relative' }}>
+          <div className="relative h-16 w-16 overflow-hidden rounded-md">
             <Image
               src={experience.logo}
               alt={experience.company}
-              fill
+              width={64}
+              height={64}
+              style={{ width: 'auto', height: 'auto' }}
               className="object-contain"
             />
           </div>

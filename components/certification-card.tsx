@@ -14,15 +14,15 @@ export function CertificationCard({ certification }: CertificationCardProps) {
     <Card className="p-3">
       <div className="flex items-center gap-3">
         {certification.badge && (
-              <div className="relative h-16 w-16 flex-shrink-0" style={{ position: 'relative' }}>
-                <Image 
-                  src={certification.badge} 
-                  alt={`${certification.title} badge`} 
-                  fill 
-                  className="object-contain" 
-                />
-              </div>
-            )}
+          <div className="relative h-12 w-12 flex-shrink-0">
+            <Image
+              src={certification.badge}
+              alt={certification.title}
+              fill
+              className="object-contain"
+            />
+          </div>
+        )}
         <div className="flex-1">
           <div className="flex items-center gap-2 justify-between">
             <h3 className="text-base font-medium">{certification.title}</h3>
@@ -37,7 +37,7 @@ export function CertificationCard({ certification }: CertificationCardProps) {
             )}
           </div>
           <p className="text-xs text-muted-foreground">{certification.issuer} • {certification.date}</p>
-
+          
           {certification.skills && (
             <div className="mt-1 flex flex-wrap gap-1">
               {certification.skills.map(skill => (
