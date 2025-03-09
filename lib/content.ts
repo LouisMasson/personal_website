@@ -36,13 +36,6 @@ export interface Experience {
   skills?: string[]
 }
 
-export interface Book {
-  title: string
-  author: string
-  description: string
-  link?: string
-}
-
 export interface Profile {
   name: string
   role: string
@@ -295,21 +288,4 @@ export const experiences: Experience[] = [
 
 ]
 
-export const books = {
-  currentlyReading: [
-    {
-      title: "L'almanach de Naval Ravikant",
-      author: "Naval Ravikant",
-      description: "A comprehensive guide to wealth and happiness, combining Naval's insights on life, philosophy, and investing.",
-      link: "https://www.amazon.fr/Lalmanach-Naval-Ravikant-senrichir-heureux/dp/236117071X",
-    },    
-  ],
-  recentlyFinished: [
-    {
-      title: "Le Comte de Monte-Cristo",
-      author: "Alexandre Dumas",
-      description: "A classic tale of betrayal, adventure, and revenge, following Edmond Dantès as he transforms into the enigmatic Count of Monte Cristo.",
-      link: "https://www.amazon.fr/Comte-Monte-Cristo-1-Alexandre-Dumas/dp/2253098051",
-    },    
-  ]
-}
+// Books section removed

@@ -13,7 +13,6 @@ export function Navigation() {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center max-w-3xl">
         <div className="flex gap-6">
           <Link href="/" className="hover:text-primary">Home</Link>
-          <Link href="/reading" className="hover:text-primary">Reading List</Link>
         </div>
         <Button
           variant="ghost"
