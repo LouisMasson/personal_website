@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { Metadata } from 'next';
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Download, ExternalLink } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -12,55 +11,43 @@ export const metadata: Metadata = {
 
 export default function ResumePage() {
   return (
-    <div className="space-y-8">
-      <div className="flex items-center mb-6">
-        <Button asChild variant="ghost" size="sm" className="mr-4">
+    <div className="container mx-auto px-4 py-12 max-w-3xl">
+      <div className="mb-8">
+        <Button asChild variant="ghost" className="pl-0 mb-4">
           <Link href="/">
-            <ArrowLeft className="h-4 w-4 mr-2" />
-            Back to home
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Back to Home
           </Link>
         </Button>
-        <h1 className="text-3xl font-bold">Resume</h1>
-        <Button asChild variant="outline" size="sm" className="ml-auto">
-          <a href="/louis_masson_cv.pdf" download>
-            <Download className="mr-2 h-4 w-4" />
-            Download as PDF
-          </a>
-        </Button>
-      </div>
-
-      <div className="bg-card rounded-lg overflow-hidden shadow-md border border-gray-200 dark:border-gray-800">
-        <div style={{ position: 'relative', width: '100%', height: '0', paddingTop: '141.4286%' }}>
-          <iframe 
-            loading="lazy" 
-            style={{ 
-              position: 'absolute', 
-              width: '100%', 
-              height: '100%', 
-              top: 0, 
-              left: 0, 
-              border: 'none', 
-              padding: 0,
-              margin: 0
-            }}
-            src="https://www.canva.com/design/DAFitOEw254/sV4v0hGTFUjpTvwYt31XMA/view?embed" 
-            allowFullScreen
-            title="Louis Masson's Resume"
-          />
-        </div>
-        <div className="p-6 flex justify-center">
-          <Button asChild size="lg" className="shadow-sm hover:shadow-md transition-all duration-300">
-            <a 
-              href="https://www.canva.com/design/DAFitOEw254/sV4v0hGTFUjpTvwYt31XMA/view" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center gap-2"
-            >
-              <ExternalLink className="h-5 w-5" />
-              View in full screen
-            </a>
+        <h1 className="text-4xl font-bold mb-4">Professional Resume</h1>
+        <p className="text-lg text-muted-foreground">
+          Download my complete resume or view the details below.
+        </p>
+        <div className="mt-4">
+          <Button asChild>
+            <Link href="/louis_masson_cv.pdf" target="_blank">
+              Download PDF
+            </Link>
           </Button>
         </div>
+      </div>
+
+      <div className="space-y-12">
+        {/* Resume content would go here */}
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Experience</h2>
+          {/* Experience items */}
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Education</h2>
+          {/* Education items */}
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Skills</h2>
+          {/* Skills */}
+        </section>
       </div>
     </div>
   );
