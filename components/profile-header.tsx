@@ -9,7 +9,7 @@ import Link from "next/link"
 export function ProfileHeader({ profile }: { profile: Profile }) {
   return (
     <div className="flex flex-col items-center justify-center gap-2 text-center">
-      <div className="relative h-24 w-24 overflow-hidden rounded-full">
+      <div className="relative h-32 w-32 overflow-hidden rounded-full">
         <Image
           src={profile.avatar}
           alt={profile.name}
