@@ -180,27 +180,38 @@ export const certifications: Certification[] = [
       credentialUrl:"https://learn.deeplearning.ai/accomplishments/83cb54cc-739f-4937-a867-2bf031694497",
       skills: ["CrewAI", "Agentic", "AI", "Task", "Role"]
     },
+
+  {
+    title: "Vibe coding 101 with replit",
+    issuer: "DeepLearning.AI & Replit",
+    date: "2025",
+    description: "Design, build, and deploy apps with an AI coding agent in an integrated web development environment.",
+    badge: "Deeplearning.jpg",
+    credentialUrl:"https://learn.deeplearning.ai/accomplishments/2f497119-1f02-43f0-b318-9a3a9856d8e6",
+    skills: ["Replit", "Vibe Coding", "AI"]
+  },
   // Add more certifications as needed
 ]
 
 export const projects: Project[] = [
 
-  {
-    name: "Github Receipt Generator",
-    description: "Generate your own GitHub profile receipts with this simple web app.",
-    image: "Github_receipt.png",
-    github: "https://github.com/LouisMasson/Github_ReceiptGenerator",
-    demo: "https://gitreceipt.patronusguardian.org", // Ajout du lien de démo
-    tags: ["JavaScript", "Python", "AI"]
-  },
 
   {
-    name: "RSS feed reader auto-tagging and autosummarize",
-    description: "A new way to read RSS feed",
-    image: "RSSfeed.png",
-    github: "https://github.com/LouisMasson/RSSfeedreader",
-    demo: "https://rssfeedaicompanion.replit.app", // Ajout du lien de démo
-    tags: ["JavaScript", "Python", "Replit", "Gemini", "AI", "Firebase"]
+    name: "Africa National Parks Ranker Elo",
+    description: "A dynamic web application that gamifies the exploration of African national parks through an innovative ELO rating system.",
+    image: "Capture d’écran 2025-04-12 142645.png",
+    github: "https://github.com/LouisMasson/AfricaParkRanker_Replit",
+    demo: "https://africa-park-ranker.replit.app/", // Ajout du lien de démo
+    tags: ["Typescript", "SQL", "Replit"]
+  },
+  
+  {
+    name: "SEO tools analysis",
+    description: "Easy way to scan your SEO ranking",
+    image: "Capture d’écran 2025-04-06 à 10.03.26.png",
+    github: "https://github.com/LouisMasson/Friendly_SeoScanner",
+    demo: "https://seo-scanner-interactive.replit.app/", // Ajout du lien de démo
+    tags: ["Typescript", "Python", "Replit"]
   },
 
   {
