@@ -12,7 +12,7 @@ const inter = Inter({
 
 export const metadata = {
   title: 'Louis Masson - Personal Website',
-  description: 'Tech lovers (AI lovers) and business developer',
+  description: 'Account Manager chez Devoteam Luxembourg spécialisé en solutions cloud, data et IA. Expert en développement commercial et passionné de nouvelles technologies. Découvrez mes projets et compétences tech.',
   icons: {
     icon: 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖥️</text></svg>'
   }
