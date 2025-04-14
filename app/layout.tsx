@@ -12,7 +12,7 @@ const inter = Inter({
 
 export const metadata = {
   title: 'Louis Masson - Personal Website',
-  description: 'Account Manager chez Devoteam Luxembourg spécialisé en solutions cloud, data et IA. Expert en développement commercial et passionné de nouvelles technologies. Découvrez mes projets et compétences tech.',
+  description: 'Account Manager chez Devoteam Luxembourg spécialisé en solutions cloud, data et IA. Expert en développement commercial et passionné de nouvelles technologies.',
   keywords: 'Louis Masson, Account Manager, Devoteam Luxembourg, Cloud Solutions, Data, AI, Business Development, Tech Projects, Digital Innovation, ServiceNow, Microsoft Azure, Développement Commercial',
   metadataBase: new URL('https://personalwebsite-lmasson.replit.app/'),
   alternates: {
