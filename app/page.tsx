@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -10,7 +11,7 @@ import { CertificationCard } from "@/components/certification-card"
 import { certifications } from "@/lib/content"
 import { ExperienceCard } from "@/components/experience-card"
 
-export default function Home() {
+export default function HomePage() {
   return (
     <div className="space-y-16">
       <ProfileHeader profile={profile} />
@@ -61,7 +62,7 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
               {category.technologies.map((tech) => (
-                <Card key={tech.name} className="tech-tile text-center">
+                <Card key={tech.name} className="p-4 text-center">
                   <div className="text-xl mb-1">{tech.emoji}</div>
                   <div className="font-medium text-sm">{tech.name}</div>
                 </Card>
@@ -226,5 +227,5 @@ export default function Home() {
         </div>
       </section>
     </div>
-  )
+  );
 }
