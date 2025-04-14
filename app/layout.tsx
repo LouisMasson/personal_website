@@ -26,6 +26,29 @@ export const metadata = {
       follow: true,
     },
   },
+  openGraph: {
+    type: 'website',
+    locale: 'fr_FR',
+    url: 'https://personalwebsite-lmasson.replit.app/',
+    siteName: 'Louis Masson',
+    title: 'Louis Masson - Tech Innovation & Business Development',
+    description: 'Account Manager at Devoteam Luxembourg specializing in cloud solutions, data, and AI. Expert in business development and passionate about new technologies.',
+    images: [
+      {
+        url: 'https://personalwebsite-lmasson.replit.app/avatar.jpeg',
+        width: 800,
+        height: 600,
+        alt: 'Louis Masson Profile',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Louis Masson - Tech Innovation & Business Development',
+    description: 'Account Manager at Devoteam Luxembourg specializing in cloud solutions, data, and AI.',
+    images: ['https://personalwebsite-lmasson.replit.app/avatar.jpeg'],
+    creator: '@Lmasson04pro',
+  },
   icons: {
     icon: 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖥️</text></svg>'
   }
