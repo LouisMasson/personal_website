@@ -1,19 +1,16 @@
+
 "use client"
 
 import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 import { Button } from "@/components/ui/button"
-import Link from "next/link"
 
 export function Navigation() {
   const { setTheme, theme } = useTheme()
 
   return (
     <nav className="border-b">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center max-w-3xl">
-        <div className="flex gap-6">
-          <Link href="/" className="hover:text-primary">Home</Link>
-        </div>
+      <div className="container mx-auto px-4 py-4 flex justify-end items-center max-w-3xl">
         <Button
           variant="ghost"
           size="icon"
