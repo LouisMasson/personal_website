@@ -194,7 +194,14 @@ export const certifications: Certification[] = [
 ]
 
 export const projects: Project[] = [
-
+  {
+    name: "Supplier Chain Analysis Bloomber Like",
+    description: "A powerful web application for visualizing complex supplier relationships between companies using Perplexity API and interactive network diagrams. This tool enables users to gain deep insights into corporate interconnections through advanced visualization and enriched financial data.",
+    image: "SupplychainIQ.png",
+    github: "https://github.com/LouisMasson/Supplainchain_analysis_bloomberglike",
+    demo: "https://supplier-sight-lmasson.replit.app/", // Ajout du lien de démo
+    tags: ["Typescript", "SQL", "Replit", "Perplexity API", "Network Diagram", "Sonar API"]
+  },
 
   {
     name: "Africa National Parks Ranker Elo",
