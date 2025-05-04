@@ -82,12 +82,14 @@ export const technologyCategories: TechnologyCategory[] = [
     ]
   },
   {
-    name: "Self-Hosting",
+    name: "Tools and Solutions",
     emoji: "🏠",
     technologies: [
       { name: "Runtipi", emoji: "⛺" },
       { name: "Coolify", emoji: "🆒" },
       { name: "HuggingFace", emoji: "🤗" },
+      { name: "ServiceNow", emoji: "🔧" },
+      { name: "Snowflake", emoji: "❄️" },
     ]
   },
   {
