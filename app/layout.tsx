@@ -62,19 +62,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {process.env.NODE_ENV === 'production' && (
-          <PlausibleProvider 
-            domain="louismasson.patronusguardian.org"
-            customDomain="https://analytics.patronusguardian.org"
-            trackOutboundLinks={true}
-            enabled={true}
-          />
-        )}
         <script
-          src="https://app.rybbit.io/api/script.js"
-          data-site-id="120"
-          defer
-        />
+            src="https://app.rybbit.io/api/script.js"
+            data-site-id="120"
+            defer
+        ></script>
       </head>
       <body 
         className={`${inter.className} min-h-screen bg-background antialiased transition-colors duration-300`} 
