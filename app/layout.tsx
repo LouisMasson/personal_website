@@ -71,18 +71,9 @@ export default function RootLayout({
           />
         )}
         <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                var s = document.createElement('script');
-                s.src = "https://app.rybbit.io/api/script.js";
-                s.setAttribute('data-site-id', "120");
-                s.defer = true;
-                s.async = true;
-                document.head.appendChild(s);
-              })();
-            `
-          }}
+          src="https://app.rybbit.io/api/script.js"
+          data-site-id="120"
+          defer
         />
       </head>
       <body 
