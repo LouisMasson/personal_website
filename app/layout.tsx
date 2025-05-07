@@ -69,6 +69,26 @@ export default function RootLayout({
             enabled={true}
           />
         )}
+        <script 
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.addEventListener('load', function() {
+                try {
+                  var s = document.createElement('script');
+                  s.src = "https://app.rybbit.io/api/script.js";
+                  s.setAttribute('data-site-id', "120");
+                  s.defer = true;
+                  s.onerror = function(err) { 
+                    console.log('Analytics load error:', err);
+                  };
+                  document.head.appendChild(s);
+                } catch (e) {
+                  console.log('Analytics initialization error:', e);
+                }
+              });
+            `
+          }}
+        />
       </head>
       <body 
         className={`${inter.className} min-h-screen bg-background antialiased transition-colors duration-300`} 
