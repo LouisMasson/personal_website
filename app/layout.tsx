@@ -74,7 +74,8 @@ export default function RootLayout({
           src="https://app.rybbit.io/api/script.js"
           data-site-id="120"
           defer
-        />
+          async
+        ></script>
       </head>
       <body 
         className={`${inter.className} min-h-screen bg-background antialiased transition-colors duration-300`} 
