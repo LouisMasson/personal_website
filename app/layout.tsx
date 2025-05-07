@@ -63,24 +63,10 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.addEventListener('load', function() {
-                try {
-                  var s = document.createElement('script');
-                  s.src = "https://app.rybbit.io/api/script.js";
-                  s.setAttribute('data-site-id', "120");
-                  s.defer = true;
-                  s.onerror = function(err) { 
-                    console.log('Analytics load error:', err);
-                  };
-                  document.head.appendChild(s);
-                } catch (e) {
-                  console.log('Analytics initialization error:', e);
-                }
-              });
-            `
-          }}
+          src="https://app.rybbit.io/api/script.js"
+          data-site-id="120"
+          defer
+          strategy="afterInteractive"
         />
       </head>
       <body 
