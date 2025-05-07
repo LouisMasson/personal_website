@@ -63,10 +63,18 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <script
-            src="https://app.rybbit.io/api/script.js"
-            data-site-id="120"
-            defer
-        ></script>
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                var s = document.createElement('script');
+                s.src = "https://app.rybbit.io/api/script.js";
+                s.setAttribute('data-site-id', "120");
+                s.defer = true;
+                document.head.appendChild(s);
+              })();
+            `
+          }}
+        />
       </head>
       <body 
         className={`${inter.className} min-h-screen bg-background antialiased transition-colors duration-300`} 
