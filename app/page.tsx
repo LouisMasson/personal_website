@@ -47,6 +47,21 @@ export default function Home() {
             </a>
           </Button>
         </div>
+
+        {/* GitHub Contributions */}
+        <div className="mt-8 flex justify-center">
+          <picture>
+            <source 
+              srcSet="https://github.pumbas.net/api/contributions/LouisMasson?bgColour=161B22&colour=39D353&dotColour=39D353" 
+              media="(prefers-color-scheme: dark)"
+            />
+            <img 
+              src="https://github.pumbas.net/api/contributions/LouisMasson?bgColour=FFFFFF&colour=0969DA&dotColour=0969DA" 
+              alt="Grille de contributions GitHub"
+              className="rounded-lg shadow-md"
+            />
+          </picture>
+        </div>
       </section>
 
       {/* Technologies */}
