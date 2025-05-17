@@ -10,7 +10,10 @@ export function Navigation() {
 
   return (
     <nav className="border-b">
-      <div className="container mx-auto px-4 py-4 flex justify-end items-center max-w-3xl">
+      <div className="container mx-auto px-4 py-4 flex justify-between items-center max-w-3xl">
+        <div>
+          <a href="/guestbook" className="text-sm hover:text-primary">Guest Book</a>
+        </div>
         <Button
           variant="ghost"
           size="icon"
