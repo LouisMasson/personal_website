@@ -1,0 +1,36 @@
+@notionhq/client warn: request fail { code: 'invalid_request_url', message: 'Invalid request URL.' }
+Error fetching entries: APIResponseError: Invalid request URL.
+    at buildRequestError (webpack-internal:///(rsc)/./node_modules/@notionhq/client/build/src/errors.js:153:16)
+    at Client.request (webpack-internal:///(rsc)/./node_modules/@notionhq/client/build/src/Client.js:385:54)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getGuestBookEntries (webpack-internal:///(rsc)/./lib/notion.ts:52:26)
+    at async GET (webpack-internal:///(rsc)/./app/api/guestbook/route.ts:12:25)
+    at async /home/runner/workspace/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:1:66877 {
+  code: 'invalid_request_url',
+  status: 400,
+  headers: Headers {
+    date: 'Sat, 17 May 2025 06:21:39 GMT',
+    'content-type': 'application/json; charset=utf-8',
+    'content-length': '93',
+    connection: 'keep-alive',
+    'cf-ray': '9411041359b5b02c-ATL',
+    'cf-cache-status': 'DYNAMIC',
+    etag: 'W/"5d-E9/1ma/mgbKK+3SyBPEkqmm612s"',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+    vary: 'Accept-Encoding',
+    'content-security-policy': "default-src 'none'",
+    'referrer-policy': 'strict-origin-when-cross-origin',
+    'x-content-type-options': 'nosniff',
+    'x-dns-prefetch-control': 'off',
+    'x-download-options': 'noopen',
+    'x-frame-options': 'SAMEORIGIN',
+    'x-notion-request-id': 'd1d00826-1adb-4375-8b73-1ecec3ccd4c1',
+    'x-permitted-cross-domain-policies': 'none',
+    'x-xss-protection': '0',
+    'set-cookie': '__cf_bm=XY1FQXBjXOYAu9.HKFJRPiOsJQxoz3CYkmbtWy.YjvE-1747462899-1.0.1.1-OAuoyTfMD12K3H4kyqE81hsPo8QCGQ6BTSsyicBa6s95oCgMzmE8OJf8togqnbOPR9e0sWqktaYhQGoPJv.oG577DPOM6uZ4hchPmUkv4eA; path=/; expires=Sat, 17-May-25 06:51:39 GMT; domain=.notion.com; HttpOnly; Secure; SameSite=None, _cfuvid=vUEqpCd4YgnC_do47d2jLDNVFcegoNMQMcHSk9Bk_u4-1747462899903-0.0.1.1-604800000; path=/; domain=.notion.com; HttpOnly; Secure; SameSite=None',
+    server: 'cloudflare',
+    'alt-svc': 'h3=":443"; ma=86400'
+  },
+  body: '{"object":"error","status":400,"code":"invalid_request_url","message":"Invalid request URL."}'
+}
+@notionhq/client warn: request fail { code: 'invalid_request_url', message: 'Invalid request URL.' }
