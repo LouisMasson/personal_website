@@ -1,6 +1,10 @@
 
 import { Client } from '@notionhq/client';
 
+if (!process.env.NOTION_API_KEY || !process.env.NOTION_DATABASE_ID) {
+  throw new Error('Missing required environment variables NOTION_API_KEY or NOTION_DATABASE_ID');
+}
+
 const notion = new Client({
   auth: process.env.NOTION_API_KEY,
 });
