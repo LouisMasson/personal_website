@@ -11,7 +11,7 @@ import { useToast } from "@/hooks/use-toast";
 export default function GuestBook() {
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
-  const [entries, setEntries] = useState([]);
+  const [entries, setEntries] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const { toast } = useToast();
 
@@ -91,7 +91,7 @@ export default function GuestBook() {
         <h2 className="text-2xl font-semibold">Recent Messages</h2>
         {loading ? (
           <p>Loading messages...</p>
-        ) : (
+        ) : entries && Array.isArray(entries) ? (
           entries.map((entry: any) => (
             <Card key={entry.id} className="p-4">
               <p className="font-medium">{entry.properties.Name.title[0]?.text.content}</p>
