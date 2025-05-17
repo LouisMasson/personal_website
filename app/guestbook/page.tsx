@@ -103,6 +103,8 @@ export default function GuestBook() {
               </p>
             </Card>
           ))
+        ) : (
+          <p>No messages yet</p>
         )}
       </div>
     </div>
